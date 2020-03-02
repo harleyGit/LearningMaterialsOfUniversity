@@ -1,0 +1,237 @@
+Java学习软件链接： 链接：http://pan.baidu.com/s/1kTrEGlh ;密码：yf02
+
+java基础系统教程-Arry老师链接：http://pan.baidu.com/s/1gdESF7t 密码：azzx
+
+Java开发环境搭建  链接：http://pan.baidu.com/s/1o63gvqy ;密码：x4jp
+
+11.1课题：Java实现万年历插件 链接：http://pan.baidu.com/s/1eQ2RoKM 密码：96wo
+
+11.2课题: Java淘宝购物车的ajax添加和查询 链接：http://pan.baidu.com/s/1sj46Mdf 密码：16ia
+
+11.5java项目开发-vip课程学习
+链接: http://pan.baidu.com/s/1pJy5tgR 密码: yrib
+
+11.6JAVA开发web桌面轻量级应用系统 链接：http://pan.baidu.com/s/1pJ9uM19 密码：uv05
+
+天猫购物车完整支付功能实现20151110Jery老师    链接：http://pan.baidu.com/s/1qW9sUle 密码：bzr5  
+
+11.10学院创始人Arry老师亲自讲了 天猫双十一红包系统
+链接：http://pan.baidu.com/s/1o6nIy6Y 密码：4oti
+
+11.11天猫双11大数据检索系统
+链接: http://pan.baidu.com/s/1dDlsUWh 密码: ttdt
+
+11.12Java开发天猫大数据视频下载组件【阿里后台视频技术】 - Arry老师
+链接：http://pan.baidu.com/s/1qW9Ziu4 密码：eg8c
+
+11.13链接：http://pan.baidu.com/s/1hqfhvFm 密码：jdhu 
+
+11.14分页视频+素材
+链接：http://pan.baidu.com/s/1pJpIQ6J 密码：zpx4
+
+11.15安妮课堂手机网站展示特效
+链接：http://pan.baidu.com/s/1i3fLFVn 密码：le3q 视频和素材
+
+11.16晚上8点半的视频地址  链接：http://pan.baidu.com/s/1mg6dLMw 密码：dxop 
+
+11.17java开发QQ远程监控系统完整版【腾讯客户端核心应用】
+链接：http://pan.baidu.com/s/1sjtc0ep 密码：eiby
+
+11.18JAVA开发腾讯内部核心技术-电子邮箱服务器--Beck老师
+链接：http://pan.baidu.com/s/1c0E1Lsc 密码：xzt4
+
+11.19学院创始人 亲自讲了 潭州9年技术积淀完整版潭州云盘系统
+链接：http://pan.baidu.com/s/1gdHJ73d 密码：kfct
+
+11.20 链接：http://pan.baidu.com/s/1mg1u1Gc 密码：gle5 
+
+
+11.22Java开发移动应用整合(微信二维码)完整版【9年内部核心技术】 - Arry老师
+链接：http://pan.baidu.com/s/1hqhPXGS 密码：94hy
+
+11.24学院创始人Arry老师亲自讲了QQ、酷狗音乐软件
+链接：http://pan.baidu.com/s/1i3wbmst 密码：mw4t
+
+11月25日JAVA开发百度内部核心技术·网络爬虫--Beck老师
+视频资料链接：http://pan.baidu.com/s/1kTF9VTH 密码：18yk
+
+11-26阿里支付核心技术阿里支付核心技术　　
+链接: http://pan.baidu.com/s/1eQdQ78u 密码: fkbf
+
+11.27浏览器自动补全课程视频链接包含素材：
+链接：http://pan.baidu.com/s/1kTlNXgr 密码：cx1u 
+
+11.28
+学院创始人亲自讲了QQ空间视频下载组件
+链接：http://pan.baidu.com/s/1bn1D0cB 密码：owx4
+
+11.29
+3d翻牌效果（思维课程）视屏链接：
+http://pan.baidu.com/s/1kT0bpmZ 密码：ofq6
+
+12.2
+Java批量上传图片实现淘宝的banner图轮播效果 jery老师
+链接：http://pan.baidu.com/s/1pJ8GOhP 密码：6vli  
+
+12.3
+JS+HTML5模仿骇客帝国文字矩阵效果 ide老师
+链接：http://pan.baidu.com/s/1pJoyi1P 密码：pkf0  
+
+12.4
+Java开发大数据网页抓取与图片多线程带进度下载系统 jery老师
+链接：http://pan.baidu.com/s/1kTPiAOJ 密码：ka9i  
+
+12.5
+LBS路线导航规划移动地图定位双击查看原图O2O平台核心技术双击查看原图，蓝桥老师
+链接：http://pan.baidu.com/s/1c1tjj7i 密码：8h2g
+
+12.6
+Java实现图片添加水印与添加文字功能 jery老师
+链接：http://pan.baidu.com/s/1eQWK3uE 密码：7upq 
+
+12.7
+课题是Java实现天气预报接口调用及xml解析
+链接地址：链接：http://pan.baidu.com/s/1o7zA4tk    密码：ls18
+
+12.8
+视屏弹幕精讲视屏 蓝桥老师
+链接：http://pan.baidu.com/s/1eQNrmk6 密码：opo5
+
+
+12-09
+JavaScript开发音乐播放器-歌词同步-Ide老师
+链接：http://pan.baidu.com/s/1c1lbUSg 密码：ed3w
+
+12-10
+java实现网络爬虫图片瀑布流系统
+链接：http://pan.baidu.com/s/1eRhAgOM 密码：4tpu
+
+12.11
+JS+HTML5 
+实现个性照片墙—Ide老师 链接：http://pan.baidu.com/s/1kUdwoHh 密码：eg3n
+
+12.12
+昨晚学院创始人强势回归 首发阿里巴巴支付系统 
+链接：http://pan.baidu.com/s/1jHqV9Am 密码：1ox5
+
+12.13
+昨晚8点半的课程下载链接地址里面包含素材：
+链接：http://pan.baidu.com/s/1skbOp8T 密码：elw1 
+
+12.14
+HTML Canvans 实现小球跳动音效添加效果-Ide老师 
+ 链接：http://pan.baidu.com/s/1jHh2qAM 密码：w4k6
+
+12.17
+Java打造高大上移动互联网电子名片自动绑定系统
+链接: http://pan.baidu.com/s/1mhkgnKs 密码：kmhy
+
+12.18 
+ Java结合数据库实现Excel表数据导出系统 
+链接: http://pan.baidu.com/s/1ge054CN 密码: 4kqg
+
+
+12-20
+课题：Java实现ERP统计报表系统 
+视频链接地址：链接：http://pan.baidu.com/s/1eQYh0w6 密码：j07k
+
+12.21
+课程：java实现ajax多文件带进度条上传系统
+链接：http://pan.baidu.com/s/1kTZtodL 密码：hjmf
+
+12-22视频
+百度云盘上传系统
+链接：http://pan.baidu.com/s/1gdNWnJl 密码：vk7z
+
+12.23
+Java实现3d翻牌效果—Jery老师
+链接：http://pan.baidu.com/s/1nu3b9pf 密码：f4nk
+
+12-24
+LBS地图红包支付系统视频
+链接：http://pan.baidu.com/s/1skuMe5J 密码：o70t
+
+12-26
+腾讯Music云核心系统
+视频链接：http://pan.baidu.com/s/1bofGwu7 密码：uh55
+
+12-27
+饿了么O2O订餐系统 
+链接：http://pan.baidu.com/s/1mhigqAs 密码：syiw
+
+12.28
+java实现百度云盘上传系统-Jery
+视频链接：http://pan.baidu.com/s/1gef9cXl 密码：5b80
+
+12.29
+学院创始人亲自讲解腾讯的移动webApp系统
+链接：http://pan.baidu.com/s/1mhkOK0C 密码：ckhd
+
+12-30
+首席架构师公开课视频  Java实现CMS系统抓取和网站的项目的实现与开发
+视频链接: http://pan.baidu.com/s/1eQV2voI 密码: 1frd
+
+1/1
+mybatis搭建实现自定义分页标签 Jery20160101
+链接: http://pan.baidu.com/s/1ntRRzqL 密码: ksr6
+
+1-3
+微信二维码通讯录系统
+链接: http://pan.baidu.com/s/1dEq41QL 密码: b9fh
+
+1-5
+学院创始人 亲自讲了百度计算器轻应用
+链接: http://pan.baidu.com/s/1c1s9J3a 密码: jrk4
+
+1-6
+Java实现cms系统之核心技术网页静态化+FreeMarker技术 
+视频链接：http://pan.baidu.com/s/1ntTVlVz 密码：if82
+素材：链接：http://pan.baidu.com/s/1mh22RNi 密码：nocd
+
+1-8
+Java实现京东天猫图片实时预览效果
+公开课视频： http://pan.baidu.com/s/1mhj6WXU 密码: cyj7
+
+1/9 
+JAVA开发 百度云音乐平台核心技术
+链接: http://pan.baidu.com/s/1kUw0PDX 密码: q9dm
+
+1-10
+今下午学院创始人 Arry老师 腾讯大数据说说系统
+链接：http://pan.baidu.com/s/1dDKd8Al 密码：u5vg
+
+1-11
+Java后台管理系统模拟后台文件拖拽
+链接: http://pan.baidu.com/s/1eRk0DfO 密码: nkhi
+
+1-13
+百度神回复评论视屏链接链接-0113-蓝桥老师
+链接：http://pan.baidu.com/s/1o7j5h1K 密码：eedo
+
+1-14
+Java开发百度云盘完整系统 - Arry老师
+链接：http://pan.baidu.com/s/1i4w6T3B 密码：jqr9
+
+1-15
+Java解说框架struts2和javase面向对象
+链接：http://pan.baidu.com/s/1o6YaDIU 密码：ax3j
+
+01-17 视频
+Arry老师亲自讲了 潭州9年Music娱乐平台核心技术 
+链接：http://pan.baidu.com/s/1mhxibFU 密码：nj30
+
+
+
+吾淘网电商美工设计免费视频教程合集：http://www.55555tao.com/Actives/18.html 只专注于电商设计培训！
+
+
+昨晚课程视频【企业网站首页设计+制作】 发你中午学习
+链接：http://pan.baidu.com/s/1eQZbyim 密码：fvqh
+
+
+Java开发大数据网页抓取与图片多线程带进度下载系统                                                        主讲：总监 Jery老师                                                             链接：http://ke.qq.com/cgi-bin/courseDetail?course_id=5141&open_room=1&term_id=5141&from=41 
+
+
+
+
+
