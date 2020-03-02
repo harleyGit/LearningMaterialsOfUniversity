@@ -1,0 +1,66 @@
+package org.bzc.jpetstore.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import org.bzc.jpetstore.utils.*;
+import org.bzc.jpetstore.beans.*;
+import org.bzc.jpetstore.biz.*;
+
+public class ProfileServlet extends HttpServlet {
+	public void init() throws ServletException {
+	}
+
+	public void destroy() {
+	}
+
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.setContentType("text/html;charset=gb2312");
+		PrintWriter out = response.getWriter();
+		String path = request.getParameter("path");
+		HttpSession session = request.getSession();
+		ConvertUtil cutils = new ConvertUtil();
+		List listProfile = new ArrayList();
+		ProfileBiz profilebiz = new ProfileBiz();
+		String tourl = "";
+		String error = "";
+		if ("add".equals(path)) {
+			tourl = "";
+		} else if ("dele".equals(path)) {
+			int tmpid = cutils.strToInt(request.getParameter("id"));
+			boolean flag = profilebiz.delete(tmpid);
+			listProfile = profilebiz.searchById(0, 0);
+			tourl = "";
+			session.setAttribute("listProfile", listProfile);
+		} else if ("update".equals(path)) {
+			Profile profile = new Profile();
+			int tmpid = cutils.strToInt(request.getParameter("id"));
+			boolean flag = profilebiz.update(profile);
+			listProfile = profilebiz.searchById(0, 0);
+			tourl = "";
+			session.setAttribute("listProfile", listProfile);
+		} else if ("toupdate".equals(path)) {
+			int tmpid = cutils.strToInt(request.getParameter("id"));
+			Profile profile = (Profile) profilebiz.searchById(0, 0).get(0);
+			tourl = "";
+			session.setAttribute("profile", profile);
+		} else {
+			listProfile = profilebiz.searchById(0, 0);
+			tourl = "";
+			session.setAttribute("listProfile", listProfile);
+		}
+		request.getRequestDispatcher(tourl).forward(request, response);
+	}
+}

@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>the first page</title>
+  </head>
+  <body>
+    <form action="reg.jsp" method="post">
+      <table>
+        <tr>
+          <td>user's name</td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td>sex:</td>
+          <td><input type="radio" name="sex" value="1" checked>boy</td>
+          <td><input type="radio" name="sex" value="2" >girl</td>
+        </tr>
+        <tr>
+          <td>graduation</td>
+          <td>
+          <select size="1" name="education">
+            <option value="" selected="selected">...</option>
+            <option value="高中" >高中</option>
+            <option value="大学" >大学</option>
+            <option value="博士" >博士</option>
+          </select>
+          </td>
+        </tr>
+        <tr>
+          <td>email</td>
+          <td><input type="text" name="mail"/></td>
+        </tr>
+        <tr>
+          <td><input type="reset" value="reset"/></td>
+          <td><input type="submit" value="submit"/></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

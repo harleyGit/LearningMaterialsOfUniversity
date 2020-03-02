@@ -1,0 +1,167 @@
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+<TITLE>简历管理</TITLE>
+<LINK href="image/style.css" tppabs="http://210.31.39.188:8090/job/image/style.css" type="text/css" rel="stylesheet">
+<STYLE type="text/css">
+input{border:1 #CCCCCC solid;}
+</STYLE>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</HEAD>
+<BODY>
+
+<!--简历管理开始-->
+<DIV><TABLE width="920" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR>
+    <TD class="intro-left" valign="top">&nbsp;</TD>
+    <TD valign="top" class="intro-right" id="base"><DIV class="intro-l1"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"> 基本个人信息 (*为必填项)</DIV>
+	<DIV><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR height="1">
+          <TD width="100%" bgColor="#dddddd"></TD></TR>
+        <TR height="1">
+          <TD width="100%" bgColor="#eeeeee"></TD></TR>
+        <TR height="3">
+          <TD width="100%" bgColor="#f7f7f7"></TD></TR>
+        <TR height="8">
+          <TD width="100%" bgColor="#ffffff"></TD></TR>
+</TABLE>
+</DIV>
+<!--简历注册开始-->
+<DIV><FORM action="http://210.31.39.188:8090/job/intro.html" method="post" name="myform" onSubmit="return check()">
+<TABLE width="99%" border="0" cellspacing="0" cellpadding="0" align="right">
+  <TR>
+    <TD width="80" height="30"><SPAN class="yellow">*</SPAN> 姓名</TD>
+    <TD width="300"><INPUT name="username" type="text"></TD>
+	<TD width="80"><SPAN class="yellow">*</SPAN> 性别</TD>
+    <TD><INPUT name="sex" type="radio" value="男" checked style="border:0;"> 男&nbsp; <INPUT name="sex" type="radio" value="女" style="border:0;"> 女</TD>
+  </TR>
+  <TR>
+    <TD height="30"><SPAN class="yellow">*</SPAN> 出生日期</TD>
+    <TD><SELECT name="BirthYear">
+    <OPTION value=1997 selected>1997</OPTION>
+    <OPTION value=1996>1996</OPTION>......
+    </SELECT> 年 <SELECT name="BirthMonth"> 
+              <OPTION value=1 selected>1</OPTION><OPTION 
+              value=2>2</OPTION>......
+              </SELECT> 月 <SELECT  name="BirthDay"> 
+              <OPTION value=1 selected>1</OPTION><OPTION 
+              value=2>2</OPTION>......</SELECT> 日</TD>
+		<TD><SPAN class="yellow">*</SPAN> 工作年限</TD>
+    <TD><SELECT style="width: 110px" name="WorkYear"> <OPTION 
+              value="0" selected>--请选择--</OPTION> <OPTION 
+              value="在读学生">在读学生</OPTION>
+              <OPTION value="应届毕业生">应届毕业生</OPTION>......</TD>
+  </TR>
+  <TR>
+    <TD height="30">国家或地区</TD>
+    <TD><SELECT style="WIDTH: 130px" 
+            onchange="JavaScript:SetIDType()" name="Nation">
+            <OPTION value="中国大陆" selected>中国大陆</OPTION>
+              <OPTION value="新加坡">新加坡</OPTION>......</SELECT></TD>
+    <TD>&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;&nbsp;口</TD>
+    <TD><SELECT style="WIDTH: 110px" name=HuKou> <OPTION 
+              value=00 selected>请选择</OPTION> <OPTION value="北京">北京</OPTION><OPTION 
+              value="上海">上海</OPTION><OPTION value="国外">国外</OPTION>......</SELECT></TD>
+  </TR>
+  <TR>
+    <TD height="30"><SPAN class="yellow">*</SPAN> 证件类型</TD>
+    <TD><SELECT style="WIDTH: 130px" name="CardType"> <OPTION 
+              value="身份证" selected>身份证</OPTION><OPTION value="护照">护照</OPTION><OPTION 
+              value="其它">其它</OPTION></SELECT></TD>
+    <TD><SPAN class="yellow">*</SPAN> 证&nbsp;件&nbsp;号</TD>
+    <TD><INPUT name="CardNumber" type="text"></TD>
+  </TR>
+  <TR>
+    <TD height="30">&nbsp;&nbsp;目前年薪</TD>
+    <TD><SELECT style="WIDTH: 130px" name="Salary"> 
+              <OPTION value=0 selected>--请输入--</OPTION> <OPTION 
+              value="2万以下">2万以下</OPTION>
+              <OPTION value="2-3万">2-3万</OPTION>......</SELECT> / 年</TD>
+    <TD>&nbsp;&nbsp;币&nbsp;&nbsp;&nbsp;&nbsp;种</TD>
+    <TD><SELECT style="WIDTH: 80px" name="CurrType"> <OPTION 
+              value="人民币" selected>人民币</OPTION><OPTION value="港币">港币</OPTION><OPTION value="其它">其它</OPTION></SELECT></TD>
+  </TR>
+  <TR>
+    <TD height="30"><SPAN class="yellow">*</SPAN> 现居住地</TD>
+    <TD colspan="3">
+      <SELECT name="selProvince" id="selProvince" onChange="changeCity( )" style="WIDTH: 130px">
+        <OPTION>--选择省份--</OPTION>
+      </SELECT>
+      <SELECT name="selCity" id="selCity" style="WIDTH: 130px">
+             <OPTION>--选择城市--</OPTION></SELECT>
+			 </TD> </TR>
+  <TR>
+    <TD height="30"><SPAN class="yellow">*</SPAN> 联系方式</TD>
+    <TD><INPUT class=textstyle style="WIDTH: 160px"  name="tel"></TD>
+	<TD><SPAN class="yellow">*</SPAN> E-mail</TD>
+    <TD><INPUT name="email" type="text"></TD>
+  </TR>
+  <TR><TD height="30">&nbsp;&nbsp;地址</TD>
+  <TD><INPUT name="address" type="text" size="35"></TD>
+  <TD>&nbsp;&nbsp;邮编</TD>
+  <TD><INPUT name="ZipCode" type="text" size="5"></TD>
+  </TR>
+  <TR><TD height="30">&nbsp;&nbsp;个人主页</TD>
+  <TD colspan="3"><INPUT name="homepage" type="text" size="35"></TD>
+  </TR>
+  <TR><TD colspan="4" id="jianli"><DIV class="intro-l1"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"> 我的简历</DIV>
+	<DIV><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR height="1">
+          <TD width="100%" bgColor="#dddddd"></TD></TR>
+        <TR height="1">
+          <TD width="100%" bgColor="#eeeeee"></TD></TR>
+        <TR height="3">
+          <TD width="100%" bgColor="#f7f7f7"></TD></TR>
+        <TR height="8">
+          <TD width="100%" bgColor="#ffffff"></TD></TR>
+</TABLE>
+</DIV></TD></TR>
+   <TR><TD height="60">&nbsp;&nbsp;工作经验</TD>
+  <TD colspan="3"><TEXTAREA name="Cwork" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+   <TR><TD height="60"><SPAN class="yellow">*</SPAN> 教育经历</TD>
+  <TD colspan="3"><TEXTAREA name="edu" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+   <TR><TD height="60">&nbsp;&nbsp;培训经历</TD>
+  <TD colspan="3"><TEXTAREA name="train" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+  <TR><TD height="60"><SPAN class="yellow">*</SPAN> 求职意向</TD>
+  <TD colspan="3"><TEXTAREA name="introself" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+  <TR><TD colspan="4" id="gaoji"><DIV class="intro-l1"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"> 人才附加信息</DIV>
+	<DIV><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR height="1">
+          <TD width="100%" bgColor="#dddddd"></TD></TR>
+        <TR height="1">
+          <TD width="100%" bgColor="#eeeeee"></TD></TR>
+        <TR height="3">
+          <TD width="100%" bgColor="#f7f7f7"></TD></TR>
+        <TR height="8">
+          <TD width="100%" bgColor="#ffffff"></TD></TR>
+</TABLE>
+</DIV></TD></TR>
+ <TR><TD height="60">&nbsp;&nbsp;附加信息</TD>
+  <TD colspan="3"><TEXTAREA name="otheredit" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+   <TR><TD height="60">&nbsp;&nbsp;IT技能</TD>
+  <TD colspan="3"><TEXTAREA name="ITedit" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+   <TR><TD height="60">&nbsp;&nbsp;项目经验</TD>
+  <TD colspan="3"><TEXTAREA name="project" cols="60" rows="3"></TEXTAREA></TD>
+  </TR>
+  <TR><TD colspan="4"><HR size="2" color="#ff7000" width="96%" align="center"></TD></TR>
+   <TR><TD colspan="4" height="40" align="center"><img src="image/save.gif"></TD></TR>
+</TABLE>
+</FORM>	
+</DIV>
+
+	</TD>
+  </TR>
+</TABLE>
+</DIV>
+
+</BODY>
+</HTML>

@@ -1,0 +1,162 @@
+BODY {
+	FONT-SIZE: 12px; MARGIN: 0px; TEXT-ALIGN: center
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+TD {
+	FONT-SIZE: 12px; COLOR: #414141; LINE-HEIGHT: 22px
+}
+.white {
+	COLOR: #ffffff
+}
+A {
+	COLOR: #414141; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff7000; TEXT-DECORATION: none
+}
+.A-white {
+	COLOR: #ffffff; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.A-white:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.btn {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; FONT-SIZE: 12px; BORDER-LEFT: #cccccc 1px solid; WIDTH: 50px; PADDING-TOP: 3px; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 22px; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center
+}
+.yellow {
+	COLOR: #ff7000
+}
+.main {
+	PADDING-BOTTOM: 10px; WIDTH: 1000px; PADDING-TOP: 10px
+}
+#logo {
+	PADDING-LEFT: 30px; FLOAT: left
+}
+#menu {
+	PADDING-RIGHT: 20px; PADDING-TOP: 35px; TEXT-ALIGN: right
+}
+#menu-bg1 {
+	BACKGROUND-IMAGE: url(menu-bg1.gif); OVERFLOW: hidden; COLOR: #ffffff; PADDING-TOP: 5px; HEIGHT: 33px
+}
+.register {
+	PADDING-BOTTOM: 30px; PADDING-TOP: 30px
+}
+.register-bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; PADDING-BOTTOM: 15px; COLOR: #666666; PADDING-TOP: 15px
+}
+.register-input {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; WIDTH: 160px; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 22px
+}
+.register-td {
+	PADDING-RIGHT: 10px; WIDTH: 70px; HEIGHT: 30px; TEXT-ALIGN: right
+}
+.register-over {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(register-sm1.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 127px; BORDER-BOTTOM: 0px; HEIGHT: 39px
+}
+.register-out {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(register-sm2.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 127px; BORDER-BOTTOM: 0px; HEIGHT: 39px
+}
+.register-check {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(register-check.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 111px; BORDER-BOTTOM: 0px; HEIGHT: 24px
+}
+.font_error {
+	COLOR: #ff0000
+}
+.font_true {
+	COLOR: #ff7000
+}
+.login-over {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(login-sm2.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 100px; BORDER-BOTTOM: 0px; HEIGHT: 33px; BACKGROUND-COLOR: #fffff7
+}
+.login-out {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(login-sm1.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 100px; BORDER-BOTTOM: 0px; HEIGHT: 33px; BACKGROUND-COLOR: #fffff7
+}
+.login-bold {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; COLOR: #ff7000
+}
+.intro-left {
+	BORDER-RIGHT: #cccccc 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #cccccc 1px dashed; PADDING-LEFT: 10px; BORDER-LEFT: #cccccc 1px dashed; WIDTH: 190px; PADDING-TOP: 10px; BORDER-BOTTOM: #cccccc 1px dashed; BACKGROUND-COLOR: #fffff7
+}
+.intro-l1 {
+	PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 13px; PADDING-BOTTOM: 10px; COLOR: #000000; PADDING-TOP: 10px
+}
+.intro-l2 {
+	PADDING-LEFT: 20px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.intro-right {
+	PADDING-LEFT: 30px
+}
+.intro-td {
+	WIDTH: 80px; HEIGHT: 30px; TEXT-ALIGN: right
+}
+.search-key {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; PADDING-LEFT: 20px; BACKGROUND-IMAGE: url(key_search.gif); BORDER-LEFT: #cccccc 1px solid; WIDTH: 400px; LINE-HEIGHT: 20px; BORDER-BOTTOM: #cccccc 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 22px
+}
+.search-left {
+	PADDING-LEFT: 35px
+}
+.search-top {
+	DISPLAY: none; Z-INDEX: 1; LEFT: 200px; WIDTH: 600px; BORDER-BOTTOM: #ff7000 2px solid; POSITION: absolute; TOP: 240px; BACKGROUND-COLOR: #fffff7
+}
+.search-menu {
+	PADDING-LEFT: 10px; Z-INDEX: 6; BACKGROUND-IMAGE: url(bottom-bg.gif); OVERFLOW: hidden; COLOR: #ffffff; PADDING-TOP: 4px; HEIGHT: 30px; TEXT-ALIGN: left
+}
+.searcharea {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(search-1.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 78px; CURSOR: pointer; PADDING-TOP: 7px; BORDER-BOTTOM: 0px; HEIGHT: 27px; TEXT-ALIGN: center
+}
+.btn-search {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(search-job.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 134px; CURSOR: pointer; BORDER-BOTTOM: 0px; HEIGHT: 32px
+}
+.btn-search1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(image/search-choice.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 210px; CURSOR: pointer; BORDER-BOTTOM: 0px; HEIGHT: 24px
+}
+.search-train {
+	DISPLAY: none; Z-INDEX: 6; LEFT: 200px; WIDTH: 600px; BORDER-BOTTOM: #ff7000 2px solid; POSITION: absolute; TOP: 300px; BACKGROUND-COLOR: #fffff7
+}
+.search-select {
+	WIDTH: 100px
+}
+.div-link {
+	FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 93px; COLOR: #000000; LINE-HEIGHT: 22px; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR: #dfdfdf; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.div-link:hover {
+	FONT-SIZE: 12px; WIDTH: 93px; COLOR: #ffffff; LINE-HEIGHT: 22px; BACKGROUND-COLOR: #cc0000; TEXT-ALIGN: center
+}
+.company-hide {
+	DISPLAY: none; Z-INDEX: 2; POSITION: absolute; BACKGROUND-COLOR: #669933; TEXT-ALIGN: center
+}
+.company-input {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; WIDTH: 100px; BORDER-BOTTOM: #cccccc 1px solid; HEIGHT: 20px
+}
+.company-tr1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #98acc4 1px solid; FONT-WEIGHT: bold; COLOR: #000000; HEIGHT: 25px; BACKGROUND-COLOR: #dce2ee; TEXT-ALIGN: center
+}
+.company-br1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-BOTTOM: #dce2ee 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: #fbfaff; TEXT-ALIGN: center
+}
+.company-br2 {
+	BORDER-RIGHT: #ffffff 2px solid; COLOR: #000000; BORDER-BOTTOM: #ffffff 2px solid; HEIGHT: 28px; BACKGROUND-COLOR: #dce2ee; TEXT-ALIGN: center
+}
+.company-br3 {
+	BORDER-RIGHT: #ffffff 2px solid; BORDER-BOTTOM: #ffffff 2px solid; HEIGHT: 28px; BACKGROUND-COLOR: #fbfaff
+}
+.index-input {
+	BORDER-RIGHT: #efefef 1px solid; BORDER-TOP: #efefef 1px solid; FONT-SIZE: 11px; BORDER-LEFT: #efefef 1px solid; WIDTH: 100px; BORDER-BOTTOM: #efefef 1px solid; HEIGHT: 16px
+}
+.index-btn {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND: url(login.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 46px; BORDER-BOTTOM: 0px; HEIGHT: 20px
+}
+.index-btn1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BACKGROUND-IMAGE: url(search.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 70px; CURSOR: pointer; BORDER-BOTTOM: 0px; HEIGHT: 30px
+}
+.index-btn2 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 40px; BACKGROUND-IMAGE: url(btn_bg.gif); OVERFLOW: hidden; BORDER-LEFT: 0px; WIDTH: 230px; PADDING-TOP: 2px; BORDER-BOTTOM: 0px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 30px
+}
+.bottom-bg {
+	BACKGROUND-IMAGE: url(bottom-bg.gif); OVERFLOW: hidden; WIDTH: 1000px; COLOR: #ffffff; PADDING-TOP: 9px; HEIGHT: 35px; TEXT-ALIGN: center
+}
+.bottom {
+	WIDTH: 1000px; COLOR: #414141; LINE-HEIGHT: 20px; TEXT-ALIGN: center
+}

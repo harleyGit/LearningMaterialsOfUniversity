@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="MyMessageBoard_Servlet_Jsp"
+  id="myeclipse.1215041356171"
+  context-root="/MyMessageBoard_Servlet_Jsp"
+  j2ee-spec="1.4"
+  archive="MyMessageBoard_Servlet_Jsp.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

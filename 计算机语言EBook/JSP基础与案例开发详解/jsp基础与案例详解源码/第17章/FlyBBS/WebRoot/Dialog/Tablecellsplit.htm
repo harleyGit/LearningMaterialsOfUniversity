@@ -1,0 +1,298 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gbk">
+<link href="../css/EditorDialog.css" type="text/css" rel="stylesheet">
+
+<script language=JavaScript>
+// 取通过URL传过来的参数 (格式如 ?Param1=Value1&Param2=Value2)
+var URLParams = new Object() ;
+var aParams = document.location.search.substr(1).split('&') ;
+for (i=0 ; i < aParams.length ; i++) {
+	var aParam = aParams[i].split('=') ;
+	URLParams[aParam[0]] = aParam[1] ;
+}
+
+// 具有主窗口相同的配置信息
+var config;
+try{
+	config = dialogArguments.config;
+}
+catch(e){
+}
+
+
+// 去空格，left,right,all可选
+function BaseTrim(str){
+	  lIdx=0;rIdx=str.length;
+	  if (BaseTrim.arguments.length==2)
+	    act=BaseTrim.arguments[1].toLowerCase()
+	  else
+	    act="all"
+      for(var i=0;i<str.length;i++){
+	  	thelStr=str.substring(lIdx,lIdx+1)
+		therStr=str.substring(rIdx,rIdx-1)
+        if ((act=="all" || act=="left") && thelStr==" "){
+			lIdx++
+        }
+        if ((act=="all" || act=="right") && therStr==" "){
+			rIdx--
+        }
+      }
+	  str=str.slice(lIdx,rIdx)
+      return str
+}
+
+// 基本信息提示，得到焦点并选定
+function BaseAlert(theText,notice){
+	alert(notice);
+	theText.focus();
+	theText.select();
+	return false;
+}
+
+// 是否有效颜色值
+function IsColor(color){
+	var temp=color;
+	if (temp=="") return true;
+	if (temp.length!=7) return false;
+	return (temp.search(/\#[a-fA-F0-9]{6}/) != -1);
+}
+
+// 只允许输入数字
+function IsDigit(){
+  return ((event.keyCode >= 48) && (event.keyCode <= 57));
+}
+
+// 选颜色
+function SelectColor(what){
+	var dEL = document.all("d_"+what);
+	var sEL = document.all("s_"+what);
+	var url = "SelColor.htm?color="+encodeURIComponent(dEL.value);
+	var arr = showModalDialog(url,window,"dialogWidth:298px;dialogHeight:265px;help:no;scroll:no;status:no");
+	if (arr) {
+		dEL.value=arr;
+		sEL.style.backgroundColor=arr;
+	}
+}
+
+// 选背景图
+function SelectImage(){
+	showModalDialog("BackImage.htm?action=other",window,"dialogWidth:360px;dialogHeight:210px;help:no;scroll:no;status:no");
+}
+
+// 搜索下拉框值与指定值匹配，并选择匹配项
+function SearchSelectValue(o_Select, s_Value){
+	for (var i=0;i<o_Select.length;i++){
+		if (o_Select.options[i].value == s_Value){
+			o_Select.selectedIndex = i;
+			return true;
+		}
+	}
+	return false;
+}
+
+// 转为数字型，并无前导0，不能转则返回""
+function ToInt(str){
+	str=BaseTrim(str);
+	if (str!=""){
+		var sTemp=parseFloat(str);
+		if (isNaN(sTemp)){
+			str="";
+		}else{
+			str=sTemp;
+		}
+	}
+	return str;
+}
+
+// 是否有效的链接
+function IsURL(url){
+	var sTemp;
+	var b=true;
+	sTemp=url.substring(0,7);
+	sTemp=sTemp.toUpperCase();
+	if ((sTemp!="HTTP://")||(url.length<10)){
+		b=false;
+	}
+	return b;
+}
+
+// 是否有效的扩展名
+function IsExt(url, opt){
+	var sTemp;
+	var b=false;
+	var s=opt.toUpperCase().split("|");
+	for (var i=0;i<s.length ;i++ ){
+		sTemp=url.substr(url.length-s[i].length-1);
+		sTemp=sTemp.toUpperCase();
+		s[i]="."+s[i];
+		if (s[i]==sTemp){
+			b=true;
+			break;
+		}
+	}
+	return b;
+}
+
+// 相对路径转为根形式路径
+function relativePath2rootPath(url){
+	if (url.substring(0,1)=="/") return url;
+
+	var sWebEditorPath = getWebEditorRootPath();
+	while(url.substr(0,3)=="../"){
+		url = url.substr(3);
+		sWebEditorPath = sWebEditorPath.substring(0,sWebEditorPath.lastIndexOf("/"));
+	}
+	return sWebEditorPath + "/" + url;
+}
+
+// 相对路径按路径模式转为相应的格式
+function relativePath2setPath(url){
+	switch(config.BaseUrl){
+	case "0":
+		return baseHref2editorPath(url);
+		break;
+	case "1":
+		return relativePath2rootPath(url);
+		break;
+	case "2":
+		return getSitePath() + relativePath2rootPath(url);
+		break;
+	}
+}
+
+// 显示路径到编辑器路的相对形式
+function baseHref2editorPath(url){
+	var editorPath = getWebEditorRootPath() + "/";
+	var baseHref = config.BaseHref;
+	//baseHref = baseHref.substr(0, baseHref.length-1);
+	var editorLen = editorPath.length;
+	var baseLen = baseHref.length;
+	var nMinLen = 0;
+	if (editorLen>baseLen){
+		nMinLen = baseLen;
+	}else{
+		nMinLen = editorLen;
+	}
+	var n = 0;
+	for (var i=1; i<=nMinLen; i++){
+		n = i;
+		if (editorPath.substr(0,i).toLowerCase()!=baseHref.substr(0,i).toLowerCase()){
+			break;
+		}
+	}	
+	var str = editorPath.substr(0, n);
+	str = str.substring(0,str.lastIndexOf("/")+1);
+	n = str.length;
+	editorPath = editorPath.substr(n);
+	baseHref = baseHref.substr(n);
+	var arr = baseHref.split("/");
+	var result = "";
+	for (var i=1; i<=arr.length-1; i++){
+		result += "../";
+	}
+	result = result + editorPath + url;
+	return result;
+}
+
+// 取编辑所在跟路径
+function getWebEditorRootPath(){
+	var url = "/" + document.location.pathname;
+	return url.substring(0,url.lastIndexOf("/Dialog/"));
+}
+
+// 取站点路径
+function getSitePath(){
+	var sSitePath = document.location.protocol + "//" + document.location.host;
+	if (sSitePath.substr(sSitePath.length-3) == ":80"){
+		sSitePath = sSitePath.substring(0,sSitePath.length-3);
+	}
+	return sSitePath;
+}
+</script>
+
+<script language="JavaScript">
+
+document.write("<title>单元格拆分</title>");
+
+// 判断值是否大于0
+function MoreThanOne(obj, sErr){
+	var b=false;
+	if (obj.value!=""){
+		obj.value=parseFloat(obj.value);
+		if (obj.value!="0"){
+			b=true;
+		}
+	}
+	if (b==false){
+		BaseAlert(obj,sErr);
+		return false;
+	}
+	return true;
+}
+
+// 预览
+function doView(opt){
+	if (opt=="col"){
+		d_col.checked=true;
+		d_row.checked=false;
+	}else{
+		d_col.checked=false;
+		d_row.checked=true;
+	}
+	if (d_col.checked){
+		d_view.innerHTML = "<table border=1 cellpadding=0><tr><td width=25>&nbsp;</td><td width=25>&nbsp;</td></tr></table>";
+		d_label.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;列数:";
+	}
+	if (d_row.checked){
+		d_view.innerHTML = "<table border=1 cellpadding=0 width=50><tr><td>&nbsp;</td></tr><tr><td>&nbsp;</td></tr></table>";
+		d_label.innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;行数:";
+	}
+}
+
+</script>
+
+<SCRIPT event=onclick for=Ok language=JavaScript>
+	// 行列数的有效性
+	if (!MoreThanOne(d_num,'行列数值无效..必须大于 1...')) return;
+
+	if (d_row.checked){
+		dialogArguments.TableRowSplit(parseInt(d_num.value));
+	}
+	if (d_col.checked){
+		dialogArguments.TableColSplit(parseInt(d_num.value));
+	}
+
+	window.returnValue = null;
+	window.close();
+</SCRIPT>
+
+</head>
+<body bgcolor=menu topmargin="5" leftmargin="5">
+
+<table border=0 cellpadding=0 cellspacing=0 align=center>
+<tr>
+	<td>
+	<table border=0 cellpadding=0 cellspacing=0>
+	<tr><td colspan=3 height=5></td></tr>
+	<tr><td><input type=radio id=d_col checked onclick="doView('col')"><label for="d_col">拆分为列</label></td><td rowspan=3 width=30></td><td width=60 rowspan=3 id=d_view valign=middle align=center></td></tr>
+	<tr><td height=5></td></tr>
+	<tr><td><input type=radio id=d_row onclick="doView('row')"><label for="d_row">拆分为行</label></td></tr>
+	<tr><td height=5 colspan=3></td></tr>
+	<tr>
+		<td id=d_label></td>
+		<td></td>
+		<td><input type=text id=d_num size=8 value="1" ONKEYPRESS="event.returnValue=IsDigit();" maxlength=3></td>
+	</tr>
+	</table>
+</tr>
+<tr><td height=5></td></tr>
+<tr><td align=right><input type=submit value=' 确 定 ' id=Ok>&nbsp;&nbsp;<input type=button value=' 取 消 ' onclick="window.close();"></td></tr>
+</table>
+
+<Script Language=JavaScript>
+doView('col');
+</Script>
+
+</body>
+</html>

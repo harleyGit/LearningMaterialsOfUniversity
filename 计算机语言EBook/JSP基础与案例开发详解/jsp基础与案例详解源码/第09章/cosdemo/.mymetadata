@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="cosdemo"
+  id="myeclipse.1244672279031"
+  context-root="/cosdemo"
+  j2ee-spec="1.4"
+  archive="cosdemo.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

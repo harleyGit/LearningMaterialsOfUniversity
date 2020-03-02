@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/index.do" location="350,150" dimension="244,84" />
+  <StrutsActivity path="/viewCategory.do" location="650,150" dimension="256,84" />
+  <StrutsActivity path="/viewProduct.do" location="50,350" dimension="262,84" />
+  <StrutsActivity path="/viewItem.do" location="950,350" dimension="238,84" />
+  <StrutsActivity path="/addItemToCart.do" location="50,550" dimension="238,84" />
+  <StrutsActivity path="/removeItemFromCart.do" location="650,550" dimension="238,84" />
+  <StrutsActivity path="/updateCartQuantities.do" location="950,550" dimension="214,84" />
+  <StrutsActivity path="/checkout.do" location="350,650" dimension="214,84" />
+  <StrutsActivity path="/newOrderForm.do" location="650,750" dimension="214,84" />
+  <StrutsActivity path="/catalog/Main.jsp" location="50,150" dimension="142,48" />
+  <StrutsActivity path="/catalog/Category.jsp" location="50,250" dimension="166,48" />
+  <StrutsActivity path="/catalog/Product.jsp" location="650,350" dimension="160,48" />
+  <StrutsActivity path="/catalog/Item.jsp" location="650,450" dimension="142,48" />
+  <StrutsActivity path="/cart/Cart.jsp" location="350,550" dimension="124,48" />
+  <StrutsActivity path="/cart/Checkout.jsp" location="50,750" dimension="148,48" />
+  <StrutsActivity path="/order/NewOrderForm.jsp" location="350,950" dimension="178,48" />
+  <StrutsActivity path="/forward page" location="350,50" dimension="118,48" />
+  <StrutsActivity path="back view page" location="650,50" dimension="124,48" />
+  <StrutsActivity path="/signonForm.do" location="950,750" dimension="250,84" />
+  <StrutsActivity path="/account/SignonForm.jsp" location="50,850" dimension="178,48" />
+  <StrutsActivity path="/signon" location="350,850" dimension="82,48" />
+  <StrutsActivity path="/newOrder.do" location="1250,450" dimension="214,84" />
+  <StrutsActivity path="/order/ShippingForm.jsp" location="1250,650" dimension="178,48" />
+  <StrutsActivity path="/order/ConfirmOrder.jsp" location="1250,750" dimension="178,48" />
+  <StrutsActivity path="/order/ViewOrder.jsp" location="1250,850" dimension="160,48" />
+  <StrutsTransition id="/signonForm.do,success,/signon,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1045,834" />
+      <AbsolutePoint location="1045,874" />
+      <AbsolutePoint location="432,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/checkout.do,success,/cart/Checkout.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,692" />
+      <AbsolutePoint location="124,692" />
+      <AbsolutePoint location="124,750" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newOrder.do,success,/order/ViewOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1464,492" />
+      <AbsolutePoint location="1539,492" />
+      <AbsolutePoint location="1539,874" />
+      <AbsolutePoint location="1410,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/updateCartQuantities.do,success,/cart/Cart.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1069,550" />
+      <AbsolutePoint location="1069,513" />
+      <AbsolutePoint location="412,513" />
+      <AbsolutePoint location="412,550" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newOrder.do,confirm,/order/ConfirmOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1443,534" />
+      <AbsolutePoint location="1443,774" />
+      <AbsolutePoint location="1428,774" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/catalog/Product.jsp,null,/viewItem.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="810,374" />
+      <AbsolutePoint location="950,374" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewItem.do,success,/catalog/Item.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1069,434" />
+      <AbsolutePoint location="1069,474" />
+      <AbsolutePoint location="792,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signonForm.do,success,/order/NewOrderForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1075,834" />
+      <AbsolutePoint location="1075,974" />
+      <AbsolutePoint location="528,974" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signonForm.do,tosingon,/account/SignonForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1075,834" />
+      <AbsolutePoint location="1075,874" />
+      <AbsolutePoint location="228,874" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/order/NewOrderForm.jsp,null,/newOrder.do,2" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="528,974" />
+      <AbsolutePoint location="1215,974" />
+      <AbsolutePoint location="1215,474" />
+      <AbsolutePoint location="1250,474" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newOrderForm.do,fail,/account/SignonForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,813" />
+      <AbsolutePoint location="139,813" />
+      <AbsolutePoint location="139,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signonForm.do,tosignon,/account/SignonForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1105,834" />
+      <AbsolutePoint location="1105,1103" />
+      <AbsolutePoint location="139,1103" />
+      <AbsolutePoint location="139,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signonForm.do,fail,/account/SignonForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1099,834" />
+      <AbsolutePoint location="1099,1073" />
+      <AbsolutePoint location="139,1073" />
+      <AbsolutePoint location="139,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/signonForm.do,success,/account/SignonForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1105,834" />
+      <AbsolutePoint location="1105,1073" />
+      <AbsolutePoint location="139,1073" />
+      <AbsolutePoint location="139,898" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewCategory.do,success,/catalog/Category.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="778,234" />
+      <AbsolutePoint location="778,274" />
+      <AbsolutePoint location="216,274" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addItemToCart.do,success,/cart/Cart.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="412,574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newOrderForm.do,success,/order/NewOrderForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/viewProduct.do,success,/catalog/Product.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="312,383" />
+      <AbsolutePoint location="650,383" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/removeItemFromCart.do,success,/cart/Cart.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="650,583" />
+      <AbsolutePoint location="474,583" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newOrder.do,shipping,/order/ShippingForm.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1357,534" />
+      <AbsolutePoint location="1357,650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,success,/catalog/Main.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="350,183" />
+      <AbsolutePoint location="192,183" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>自编写上传组件--文件上载示例</title>
+		<style>
+input {
+	border: 1px solid green;
+}
+</style>
+	</head>
+	<body>
+		<form action=selfbean.jsp enctype="MULTIPART/FORM-DATA" method=post>
+			作者:
+			<input type=text name=author>
+			<br>
+			公司:
+			<input type=text name=company>
+			<br>
+			说明:
+			<textarea name=comment></textarea>
+			<br>
+			选择要上载的文件
+			<input type=file name=filename>
+			<br>
+			文件描述:
+			<input type=text name=description>
+			<br>
+			<input type=submit value="Upload">
+		</form>
+	</body>
+</html>

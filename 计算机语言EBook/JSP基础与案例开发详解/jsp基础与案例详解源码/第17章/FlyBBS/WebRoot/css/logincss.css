@@ -1,0 +1,114 @@
+TD {
+	FONT-SIZE: 12px;
+	color: #666666;
+	font-family: "Verdana", "宋体";
+
+}
+P {
+	FONT-SIZE: 12px;
+	color: #666666;
+	font-family: "Verdana", "宋体";
+
+}
+LI {
+	FONT-SIZE: 12px;
+	text-decoration: none;
+	color: #7a7a7a;
+	font-family: "Geneva", "Arial";
+	list-style-type: circle;
+	list-style-position: inside;
+}
+INPUT {
+	FONT-SIZE: 11px; color: #7a7a7a; font-family: "Arial"
+}
+A:link {
+	COLOR: #666666;
+	font-size: 12px;
+	font-family: "Verdana", "宋体";
+	text-decoration: underline;
+
+
+
+}
+A:visited {
+	TEXT-DECORATION: underline
+;
+	color: #666666;
+	font-size: 12px;
+	font-family: "Verdana", "宋体";
+
+
+}
+.lr2 {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+
+A:active {
+	COLOR: #666666;
+	TEXT-DECORATION: none;
+	font-size: 12px;
+
+}
+A:hover {
+	COLOR: #666666;
+	font-size: 12px;
+	text-decoration: none;
+
+
+}
+.line3 {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: c8c8c8;
+	border-right-color: c8c8c8;
+	border-bottom-color: c8c8c8;
+	border-left-color: c8c8c8;
+}
+.inputno {
+	height: 18px;
+	width: 100px;
+	border: 1px solid #FB6413;
+	color: #999999;
+
+}
+.line1 {
+
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: c8c8c8;
+	border-right-color: c8c8c8;
+	border-bottom-color: c8c8c8;
+	border-left-color: c8c8c8;
+}
+.input2 {
+
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	color: #999999;
+}
+.no {
+	text-decoration: none;
+}

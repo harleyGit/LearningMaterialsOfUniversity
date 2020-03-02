@@ -1,0 +1,163 @@
+<HTML><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>用户注册页面</TITLE>
+<LINK href="image/style.css" tppabs="http://210.31.39.188:8090/job/image/style.css" type="text/css" rel="stylesheet">
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<SCRIPT language="javascript">
+ function $ ( pElementID ) {
+		return document.getElementById(pElementID);
+	}
+<!--电子邮件地址验证-->	
+function chemail(email){
+if(email.value.indexOf('@',0)==-1){
+alert("请输入正确的电子邮件地址");
+email.focus();
+return false;
+}
+else{
+window.open("checkmail.html"/*tpa=http://210.31.39.188:8090/job/checkmail.html*/,"","height=100,width=300,toolbar=no, menubar=no, scrollbars=no,resizable=no")
+}
+}	
+<!--会员名验证-->
+function checkuser(username){
+var  reg= /^[A-Za-z]+$/;
+if(username.value==""){
+   alert("请输入会员名");
+   username.focus();
+   return false;
+   }
+else if(username.value.length<6){
+         alert("会员名不能少于6位");
+         username.focus();
+         return false;
+       }
+else if(!reg.test(username.value. charAt(0))){
+         alert("会员名必须以字母开头");
+         username.focus();
+         return false;
+}
+else{
+window.open("checkuser.html"/*tpa=http://210.31.39.188:8090/job/checkuser.html*/,"","height=100,width=300,toolbar=no, menubar=no, scrollbars=no,resizable=no")
+}
+}
+<!--密码验证-->
+function checkpwd(pwd){
+var infpwd=$("fpwd");
+
+if(pwd.value==""){
+infpwd.className="font_error"   //提示信息字体样式
+infpwd.innerHTML="请输入密码!"
+return false;
+}
+if(pwd.value.length<6){
+infpwd.className="font_error"
+infpwd.innerHTML="请输入不少于6位的密码!"
+return false;
+}
+            infpwd.className = "font_true";
+			infpwd.innerHTML = "您填写的密码是合法的！";
+			return true;
+}
+
+function checkrpwd(pwd,rpwd){
+var infrepwd=$("frepeatpwd");
+if(rpwd.value==""){
+infrepwd.className="font_error"
+infrepwd.innerHTML="请输入确认密码!"
+return false;
+}
+if(pwd.value!=rpwd.value){
+infrepwd.className="font_error"
+infrepwd.innerHTML="两次输入的密码不一致，请重新输入!"
+return false;
+}
+            infrepwd.className = "font_true";
+			infrepwd.innerHTML = "请牢记您输入的密码！";
+			return true;
+}
+</SCRIPT>
+<!-- InstanceEndEditable -->
+</HEAD>
+<BODY>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<DIV class="main">
+<DIV id="logo"><IMG src="image/logo.gif" width="187" height="60" tppabs="http://210.31.39.188:8090/job/image/logo.gif"></DIV>
+
+<DIV id="menu"><A href="login.html" tppabs="http://210.31.39.188:8090/job/login.html"><IMG src="image/menu1-1.gif" tppabs="http://210.31.39.188:8090/job/image/menu1-1.gif"></A><A href="search.html" tppabs="http://210.31.39.188:8090/job/search.html"><IMG src="image/menu2-2.gif" tppabs="http://210.31.39.188:8090/job/image/menu2-2.gif"></A><A href="intro.html" tppabs="http://210.31.39.188:8090/job/intro.html"><IMG src="image/menu3-2.gif" tppabs="http://210.31.39.188:8090/job/image/menu3-2.gif"></A></DIV>
+<DIV id="menu-bg1">我的简历 | 个人搜索器 | 职位收藏夹 | 工作申请记录 | 退出 </DIV>
+<!--用户注册开始-->
+<DIV class="register"><TABLE width="857" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD><IMG src="image/register-top.gif" tppabs="http://210.31.39.188:8090/job/image/register-top.gif"></TD>
+  </TR>
+  <TR>
+    <TD><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD background="image/register-line.gif" tppabs="http://210.31.39.188:8090/job/image/register-line.gif" width="3"></TD>
+    <TD><FORM action="http://210.31.39.188:8090/job/register.html" method="post" name="myform">
+	<TABLE width="760" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR>
+    <TD class="register-bold">会员信息：<IMG src="image/dot_line_1.gif" tppabs="http://210.31.39.188:8090/job/image/dot_line_1.gif" align="absmiddle"></TD>
+  </TR>
+  <TR>
+    <TD><TABLE width="96%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR>
+  <TD width="15"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"></TD>
+    <TD class="register-td">E-mail：</TD>
+    <TD width="180"><INPUT name="email" type="text" class="register-input"></TD>
+    <TD><INPUT name="check1" type="button" value=" "class="register-check" onClick="chemail(email)"> &nbsp;&nbsp;请填写常用电子邮件</TD>
+  </TR>
+  <TR><TD width="30"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"></TD>
+    <TD class="register-td">会&nbsp;员&nbsp;名：</TD>
+    <TD><INPUT name="username" type="text" class="register-input"></TD>
+    <TD><INPUT name="check2" type="button" value=" "class="register-check"  onClick="checkuser(username)"> &nbsp;&nbsp;会员名须以字母开头，至少6位</TD>
+  </TR>
+  <TR><TD width="30"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"></TD>
+    <TD class="register-td">密&nbsp;&nbsp;&nbsp;&nbsp;码：</TD>
+    <TD><INPUT name="psw" type="password" class="register-input" onBlur="checkpwd(psw)"></TD>
+    <TD><DIV id="fpwd">密码设置至少6位</DIV></TD>
+  </TR>
+  <TR><TD width="30"><IMG src="image/register-arrow.gif" tppabs="http://210.31.39.188:8090/job/image/register-arrow.gif"></TD>
+    <TD class="register-td">重复密码：</TD>
+    <TD><INPUT name="repeatpsw" type="password" class="register-input" onBlur="checkrpwd(psw,repeatpsw)"></TD>
+    <TD><DIV id="frepeatpwd"></DIV></TD>
+  </TR>
+</TABLE>
+</TD>
+  </TR>
+  <TR>
+    <TD><DIV class="register-bold"><IMG src="image/dot_line_2.gif" tppabs="http://210.31.39.188:8090/job/image/dot_line_2.gif" align="absmiddle"></DIV>
+	<DIV align="center"><INPUT name="B1" type="submit" value="&nbsp;" onMouseOut="this.className='register-over'" onMouseOver="this.className='register-out'" class="register-over"></DIV></TD>
+  </TR>
+</TABLE></FORM>
+
+   </TD>
+    <TD background="image/register-line.gif" tppabs="http://210.31.39.188:8090/job/image/register-line.gif" width="3"></TD>
+  </TR>
+</TABLE>
+</TD>
+  </TR>
+  <TR>
+    <TD><IMG src="image/register-bottom.gif" tppabs="http://210.31.39.188:8090/job/image/register-bottom.gif"></TD>
+  </TR>
+</TABLE>
+</DIV>
+</DIV>
+<!-- InstanceEndEditable -->
+<DIV id="bottom-bg"class="bottom-bg">网站导航 | <A href="index.html" tppabs="http://210.31.39.188:8090/job/index.html" class="A-white">网站首页</A> | <A href="search.html" tppabs="http://210.31.39.188:8090/job/search.html" class="A-white">职位搜索</A> | <A href="login.html" tppabs="http://210.31.39.188:8090/job/login.html" class="A-white">Myjob</A> | <A href="register.html" tppabs="http://210.31.39.188:8090/job/register.html" class="A-white">用户注册</A> | <A href="login.html" tppabs="http://210.31.39.188:8090/job/login.html" class="A-white">用户登录</A> | <A href="intro.html" tppabs="http://210.31.39.188:8090/job/intro.html" class="A-white">简历管理</A> | <A href="company.html" tppabs="http://210.31.39.188:8090/job/company.html" class="A-white">招聘公司</A></DIV>
+<TABLE height=87 width=873 align=center border=0>
+  <TBODY>
+    <TD align=middle height=19>联系电话： 010-69202485 咨询邮箱：itcast@126.com</TD></TR>
+  <TR>
+    <TD align=middle height=21>地址： 北京市大兴区黄村兴华大街13号清城名苑C座1805室</TD></TR>
+  <TR>
+    <TD align=middle height=23>版权所有： 北京传智播客大兴教学区 &copy; 2007-2008
+      <SCRIPT language=JavaScript 
+      src="传智播客·大兴区,Java高端培训,C%23-_Net培训,软件培训,软件开发培训,编程培训_files/stat.htm" 
+      charset=gb2312></SCRIPT>
+       </TD></TR></TBODY></TABLE>
+</BODY>
+<!-- InstanceEnd --></HTML>

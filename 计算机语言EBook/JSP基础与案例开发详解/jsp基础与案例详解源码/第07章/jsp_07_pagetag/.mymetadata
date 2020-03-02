@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="jsp_07_pagetag"
+  id="myeclipse.1237434816031"
+  context-root="/jsp_07_pagetag"
+  j2ee-spec="1.4"
+  archive="jsp_07_pagetag.war">
+  <attributes>
+    <attribute name="webrootdir" value="/WebRoot" />
+  </attributes>
+</project-module>
+

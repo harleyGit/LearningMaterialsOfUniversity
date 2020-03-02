@@ -1,0 +1,363 @@
+<HTML><!-- InstanceBegin template="/Templates/Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<!-- InstanceBeginEditable name="doctitle" -->
+<TITLE>我的招聘网</TITLE>
+<LINK href="image/style.css" tppabs="/image/style.css" type="text/css" rel="stylesheet">
+<SCRIPT language="javascript">
+function close1(){
+document.getElementById("mscroll").style.display="none";  //隐藏随滚动条上下滚动的层
+}
+
+function move(){
+ document.getElementById("mscroll").style.pixelTop=document.body.scrollTop+100; //获取mscroll层的上方位置。 
+ document.getElementById("mscroll").style.pixelLeft=document.body.scrollLeft+10; //获取mscroll层的左方位置。
+
+}
+window.onscroll=move;   //窗口的滚动事件，当页面滚动时调用move( )函数
+</SCRIPT>
+
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+</HEAD>
+<BODY>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+<DIV class="main">
+<!--带关闭按扭的随鼠标上下滚动的图片层-->
+<DIV align="right" style="position:absolute;left:10px;top:100px;width:109px;background-color:#CCCCCC;z-index:2;" id="mscroll">
+ <IMG src="image/close.jpg" tppabs="/image/close.jpg"><BR><A href="javascript:close1();">关闭</A>
+</DIV>
+<!--随机漂浮广告开始-->
+<DIV id="float" style="position:absolute;z-index:3;">
+ <IMG src="image/float.gif" tppabs="/job/image/float.gif" width="80" height="52">
+</DIV>
+<SCRIPT language='JavaScript'>
+//定义全局变量
+var xPos = 0;   //X轴坐标
+var yPos = 0;  //Y轴坐标
+var step = 1;  //图片移动的速度
+var yon = 0;   //设置图片在Y轴的移动方向
+var xon = 0;   //设置图片在X轴的移动方向
+var img = document.getElementById('float');  //图片所在层ID
+function changePos(){
+var width = document.body.clientWidth;       //浏览器宽度
+var height = document.body.clientHeight;    //浏览器高度
+var Hoffset = img.offsetHeight;             //漂浮图片高度
+var Woffset = img.offsetWidth;              //漂浮图片宽度
+img.style.left = xPos + document.body.scrollLeft;     //漂浮图片距浏览器左侧位置
+img.style.top = yPos + document.body.scrollTop;      //漂浮图片距浏览器顶端位置
+if (yon==0) {    
+yPos = yPos + step;   //漂浮图片在Y由方向上向下移动
+}else {
+yPos = yPos - step;   //漂浮图片在Y由方向上向上移动
+}
+if (yPos < 0) {     //如果漂浮图片漂到浏览器顶端时，设置图片在Y轴方向上向下移动
+yon = 0;
+yPos = 0;
+}
+if (yPos >= (height - Hoffset)) {   //如果漂浮图片漂到浏览器底端时，设置图片在Y轴方向上向上移动
+yon = 1;
+yPos = (height - Hoffset);
+}
+if (xon==0) {
+xPos = xPos + step;     //漂浮图片在X由方向上向右移动
+}
+else {
+xPos = xPos - step;     //漂浮图片在X由方向上向左移动
+}
+if (xPos < 0) {     //如果漂浮图片漂到浏览器左侧时，设置图片在X轴方向上向右移动
+xon = 0;
+xPos = 0;
+}
+if (xPos >= (width - Woffset)) {     //如果漂浮图片漂到浏览器右侧时，设置图片在X轴方向上向左移动
+xon = 1;
+xPos = (width - Woffset);
+}
+setTimeout('changePos()', 30);      //设置定时器，使漂浮图片不间断的移动
+}
+ window.onload=changePos();  //页面载入时，调用changePos()函数，随机漂浮广告
+</SCRIPT>
+<!--头部开始-->
+<DIV id="logo"><IMG src="image/logo.gif" tppabs="/image/logo.gif"></DIV>
+<DIV id="menu">
+ <A href="login.html" tppabs="login.html">
+   <IMG src="image/menu1-2.gif" tppabs="image/menu1-2.gif">
+ </A>
+ <A href="search.html" tppabs="search.html">
+   <IMG src="image/menu2-2.gif" tppabs="image/menu2-2.gif">
+ </A>
+ <A href="intro.html" tppabs="intro.html">
+   <IMG src="image/menu3-2.gif" tppabs="image/menu3-2.gif">
+ </A>
+</DIV>
+<DIV id="menu-bg1" style="padding-top:2px;">
+ <FORM action="" method="post" name="myform">个人会员登录 | 会员名： &nbsp;
+  <INPUT name="username" type="text" class="index-input"> &nbsp;&nbsp;&nbsp;&nbsp;密码：&nbsp;
+  <INPUT name="pwd" type="password" class="index-input"> &nbsp;&nbsp;&nbsp;
+  <INPUT name="subbmit" type="submit" value="&nbsp" class="index-btn">&nbsp;&nbsp;&nbsp;
+  <INPUT name="zddl" type="checkbox" value="1"> 自动登录&nbsp;&nbsp;&nbsp;
+  <A href="register.html" tppabs="register.html" class="A-white">新会员注册</A>
+ </FORM>
+</DIV>
+<!--搜索、图片、近期预告-->
+<DIV style="padding-top:10px;"><TABLE width="99%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR><TD width="210"><TABLE width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR align="center">
+    <TD><A href="company.html" tppabs="company.html">
+	     <IMG src="image/index-2.gif" tppabs="image/index-2.gif">
+	    </A>
+	</TD>
+  </TR>
+  <TR align="center">
+    <TD><A href="company.html" tppabs="company.html">
+	      <IMG src="image/index-3.gif" tppabs="image/index-3.gif" vspace="4">
+		</A>
+	</TD>
+  </TR>
+  <TR align="center">
+    <TD><A href="company.html" tppabs="company.html">
+	     <IMG src="image/index-4.gif" tppabs="image/index-4.gif" vspace="4">
+		</A>
+	</TD>
+  </TR>
+</TABLE>
+</TD>
+  <FORM action="search.html" method="post" name="search">
+	<TD style="background-image:url(image/index-bg1.gif); background-repeat:no-repeat;padding-left:15px; padding-top:40px;" width="202" height="200">请输入关键词：<BR>
+	<INPUT name="search-key" type="text" class="register-input"><BR>例如：软件工程师<BR>或 项目经理 互联网<BR>
+	<DIV align="center" style="width:150px;">
+	 <INPUT name="search-btn" type="submit" value="&nbsp;" class="index-btn1"></DIV>
+	</TD>
+  </FORM>
+	<td><div align="center">欢迎光临招聘网</div>
+	<DIV><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR align="center">
+    <TD><A href="company.html" tppabs="company.html">
+	     <IMG src="image/index-7.gif" tppabs="image/index-7.gif" id="ad1">
+	    </A>
+		<A href="company.html" tppabs="company.html">
+		 <IMG src="image/index-5.gif" tppabs="image/index-5.gif" id="ad2">
+		</A><A href="company.html" tppabs="company.html">
+		 <IMG src="image/index-6.gif" tppabs="image/index-6.gif" id="ad3">
+		</A>
+	</TD>
+  </TR>
+   <TR align="center">
+    <TD>·<A href="company.html" tppabs="company.html">深圳高新技术人才专场招聘会</A>&nbsp;&nbsp;&nbsp;&nbsp;
+	    ·<A href="company.html" tppabs="company.html">近期预告敬请关注</A></TD>
+  </TR>
+  <SCRIPT language="javascript">
+	var NowFrame=1;  //全局变量，轮换显示图片的第一张
+	var MaxFrame=3;  //全局变量，轮换显示图片的最大张数
+	function adv(){
+	for(var i=1;i<=MaxFrame;i++){
+	 if(i==NowFrame)
+	   document.getElementById('ad'+NowFrame).style.display='';   //目前显示的图片
+	   else
+	   document.getElementById('ad'+i).style.display='none';      //隐藏其他图片
+	   }
+	{
+	if(NowFrame==MaxFrame)   //设置下一张显示的图片
+	   NowFrame=1;
+	   else
+	     NowFrame=NowFrame+1;
+		 }
+	     setTimeout('adv()',2000);   //设置定时器，显示下一张图片
+	}
+	window.onLoad=adv();  //当页面载入时，调用 adv()函数
+	</SCRIPT>
+</TABLE></DIV></td>
+<TD width="210" valign="top"><TABLE width="204" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR>
+    <TD id="menu-bg1"style="border:1 #ff7000 solid;border-bottom:0;">·近期预告</TD>
+  </TR>
+  <TR>
+    <TD style="padding-left:10px;border:1 #ff7000 solid;border-top:0;"><MARQUEE height="140" direction="up" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="1">·2007年9月无忧指数IT图解<BR>
+      ·3G售前技术支持工程师<BR>
+      ·3G测试工程师<BR>
+      ·3G软件工程师<BR>
+      ·3G系统工程师<BR>
+      ·2007年9月无忧指数IT图解<br>·3G售前技术支持工程师<BR>
+      ·3G测试工程师<BR>
+      ·3G软件工程师<BR>
+      ·3G系统工程师<BR>
+      ·2007年9月无忧指数IT图解</MARQUEE></TD>
+  </TR>
+</TABLE>
+</TD>
+  </TR>
+</TABLE>
+</DIV>
+<!--品牌公司跑马灯-->
+<DIV><IMG src="image/index-1.gif" tppabs="image/index-1.gif"></DIV>
+<DIV style="padding-top:10px;"><MARQUEE width="980" height="30" direction="left" onMouseOver="this.stop()" onMouseOut="this.start()" scrollamount="6">
+<A href="company.html" tppabs=" company.html">武汉红孩子信息技术有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">海南优美内衣有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉第三空间建筑装饰设计工程</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉鑫凌铭泰汽车销售有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉晟添华广告有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">华艺墙纸布艺市场有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">深圳市爱迪星电子科技有限公司武汉</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">伊莎美尔</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉美苑广告印务有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">卓著装饰</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉市捷强智能门控工程有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉沿极建筑技术有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉东云阁酒店管理有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉市中创环亚建筑景观设计工程</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">法国伊丝艾拉内衣</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">达诚医药</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">ERUNER湖北分公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">湖北伟业房地产有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">华闻期货武昌营业部</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉华城运输有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉百纳装饰工程有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">星月门业</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">四合园酒店</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">锐色力奥品牌策略机构</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉凯比亚电池科技有限公司</A>&nbsp;&nbsp;<A href="company.html" tppabs=" company.html">武汉绍兴老酒饮食有限公司</A>
+</MARQUEE></DIV>
+<!--图片广告-->
+<div><TABLE width="962" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR align="center">
+    <TD><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad1.gif" tppabs=" image/index-ad1.gif" hspace="4" vspace="4" border="0"></A></TD>
+    <TD><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad2.gif" tppabs=" image/index-ad2.gif" hspace="4" vspace="4" border="0"></A><br><IMG src="image/index-ad6.gif" tppabs=" image/index-ad6.gif">
+    <TD><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad4.gif" tppabs=" image/index-ad4.gif" hspace="4" vspace="4" border="0"></A><br><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad5.gif" tppabs=" image/index-ad5.gif" hspace="4" vspace="4" border="0"></A></TD>
+  </TR>
+  <TR align="center">
+    <TD><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad7.gif" tppabs=" image/index-ad7.gif" hspace="4" vspace="4" border="0"></A><br>
+	<A href="company.html" tppabs=" company.html"><IMG src="image/index-ad8.gif" tppabs=" image/index-ad8.gif" hspace="4" vspace="4" border="0"></A></TD>
+    <TD><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad9.gif" tppabs=" image/index-ad9.gif" hspace="4" vspace="4" border="0"></A><br><IMG src="image/index-ad10.gif" tppabs=" image/index-ad10.gif">
+    <TD><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad11.gif" tppabs=" image/index-ad11.gif" hspace="4" vspace="4" border="0"></A><br><A href="company.html" tppabs=" company.html"><IMG src="image/index-ad12.gif" tppabs=" image/index-ad12.gif" hspace="4" vspace="4" border="0"></A></TD>
+  </TR>
+</TABLE>
+</div>
+<!--最热招聘-->
+<DIV><TABLE width="962" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR>
+    <TD><IMG src="image/hot_top.gif" tppabs=" image/hot_top.gif"></TD>
+  </TR>
+  <TR>
+    <TD><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD style="background-image:url(image/register-line.gif); background-repeat:repeat-y" width="3"></TD>
+    <TD><TABLE width="97%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <TR>
+    <TD><SPAN class="index-btn2"><A href="#hot1">计算机/网络/通信/电子</A></SPAN><SPAN class="index-btn2"><A href="#hot2">贸易/消费/制造/营运</A></SPAN></TD>
+  </TR>
+  <TR>
+    <TD id="hot1">
+      <DIV class="login-bold" style="padding-top:20px;"><IMG src="image/register-arrow.gif" tppabs=" image/register-arrow.gif" width="9" height="9"> 计算机/网络/通信/电子</DIV>
+	  <DIV><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉网度信息科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·北京东方中科集成科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天行健科学仪器设备有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉电信系统集成分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉网路万通科技开发有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉理康科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉红帽电子娱乐有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉盛铭科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市一龙电气科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天腾通软科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉洛比科技有限公司    </TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉百捷网络服务有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·江苏新科数字技术有限公司武汉分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市武昌区徐恒电脑服务部</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉网度信息科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·北京东方中科集成科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天行健科学仪器设备有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉电信系统集成分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉网路万通科技开发有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉理康科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉红帽电子娱乐有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉盛铭科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市一龙电气科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天腾通软科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉洛比科技有限公司    </TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉百捷网络服务有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·江苏新科数字技术有限公司武汉分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市武昌区徐恒电脑服务部</TD>
+  </TR>
+</TABLE>
+</DIV>
+    </TD>
+  </TR>
+  <TR>
+    <TD id="hot2"><DIV class="login-bold" style="padding-top:20px;"><IMG src="image/register-arrow.gif" tppabs=" image/register-arrow.gif" width="9" height="9"> 贸易/消费/制造/营运</DIV>
+	  <DIV><TABLE width="100%" border="0" cellspacing="0" cellpadding="0">
+  <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉网度信息科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·北京东方中科集成科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天行健科学仪器设备有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉电信系统集成分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉网路万通科技开发有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉理康科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉红帽电子娱乐有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉盛铭科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市一龙电气科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天腾通软科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉洛比科技有限公司    </TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉百捷网络服务有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·江苏新科数字技术有限公司武汉分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市武昌区徐恒电脑服务部</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉网度信息科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·北京东方中科集成科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天行健科学仪器设备有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉电信系统集成分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉网路万通科技开发有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·深圳市天音美讯信息技术有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉理康科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉红帽电子娱乐有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉盛铭科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市一龙电气科技有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉天腾通软科技有限公司</TD>
+  </TR>
+   <TR>
+    <TD style="border-bottom:1 #cccccc dotted;" height="25">·武汉洛比科技有限公司    </TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉百捷网络服务有限公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·江苏新科数字技术有限公司武汉分公司</TD>
+    <TD style="border-bottom:1 #cccccc dotted;">·武汉市武昌区徐恒电脑服务部</TD>
+  </TR>
+</TABLE>
+</DIV></TD>
+  </TR>
+</TABLE>
+</TD>
+    <TD style="background-image:url(image/register-line.gif); background-repeat:repeat-y"  width="3"></TD>
+  </TR>
+</TABLE>
+</TD>
+  </TR>
+  <TR>
+    <TD><IMG src="image/hot_down.gif" tppabs=" image/hot_down.gif"></TD>
+  </TR>
+</TABLE>
+
+</DIV>
+</DIV>
+
+<!-- InstanceEndEditable -->
+<DIV id="bottom-bg"class="bottom-bg">网站导航 | <A href="index.html" tppabs="http://210.31.39.188:8090/job/index.html" class="A-white">网站首页</A> | <A href="search.html" tppabs="http://210.31.39.188:8090/job/search.html" class="A-white">职位搜索</A> | <A href="login.html" tppabs="http://210.31.39.188:8090/job/login.html" class="A-white">Myjob</A> | <A href="register.html" tppabs="http://210.31.39.188:8090/job/register.html" class="A-white">用户注册</A> | <A href="login.html" tppabs="http://210.31.39.188:8090/job/login.html" class="A-white">用户登录</A> | <A href="intro.html" tppabs="http://210.31.39.188:8090/job/intro.html" class="A-white">简历管理</A> | <A href="company.html" tppabs="http://210.31.39.188:8090/job/company.html" class="A-white">招聘公司</A></DIV>
+<TABLE height=87 width=873 align=center border=0>
+  <TBODY>
+    <TD align=middle height=19>联系电话： 010-69202485 咨询邮箱：itcast@126.com</TD></TR>
+  <TR>
+    <TD align=middle height=21>地址： 北京市大兴区黄村兴华大街13号清城名苑C座1805室</TD></TR>
+  <TR>
+    <TD align=middle height=23>版权所有： 北京传智播客大兴教学区 &copy; 2007-2008
+      <SCRIPT language=JavaScript 
+      src="传智播客·大兴区,Java高端培训,C%23-_Net培训,软件培训,软件开发培训,编程培训_files/stat.htm" 
+      charset=gb2312></SCRIPT>
+       </TD></TR></TBODY></TABLE>
+</BODY>
+<!-- InstanceEnd --></HTML>

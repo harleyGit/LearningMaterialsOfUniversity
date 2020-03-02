@@ -1,0 +1,136 @@
+ .box{
+	 font-size:			12px;
+	 background-color: #f0f0f0;
+	 border: 1px solid #777777;
+ }
+td {
+	font-size: 10pt;
+	color: #108ac6;
+	line-height: 19px;
+}
+
+input {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 15pt;
+	text-align: justify;
+
+
+}
+
+select {
+	font-family: Verdana,Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: #FFFFFF;
+}
+a:link {
+	color: #108ac6;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #108ac6;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FFA54A;
+}
+a:active {
+	text-decoration: none;
+	color: #108ac6;
+}
+
+.cp {
+	font-family: "";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 20px;
+	color: #333333;
+	letter-spacing: normal;
+	word-spacing: normal;
+
+}
+.cp-en {
+	font-size: 12px;
+	line-height: normal;
+	text-decoration: none;
+	color: #333333;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+.cp-biaoti {
+	font-family: "";
+	font-size: 15px;
+	color: #713835;
+	text-decoration: none;
+	font-weight: bold;
+	background-repeat: no-repeat;
+?, OffX=?, OffY=?, Positive=?); 
+
+
+}
+.link2 {
+	font-size: 12px;
+	color: #F3F3F3;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: "";
+
+
+}
+.cp2 {
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 19px;
+	color: #cococo;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+.hangju {
+
+	font-family: "";
+	font-size: 10pt;
+	font-style: normal;
+	line-height: 24px;
+	color: #333333;
+	letter-spacing: normal;
+	word-spacing: normal;
+}
+.cp-cu {
+
+	font-size: 13px;
+	line-height: normal;
+	text-decoration: none;
+	color: #003366;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.table-shangxia {
+	BORDER-TOP: 1px solid #009900; BORDER-BOTTOM: 1px solid #006600}
+.table-you {
+	BORDER-RIGHT: 1px solid #CCCCCC;
+	color: #CDCDCD;
+}
+.table-zuo {
+	BORDER-LEFT: 1px solid #0099FF;
+	color: #BDC7D6;
+}
+.table-shang {
+	BORDER-TOP: 1px solid #000099}
+	.table-xia {
+	BORDER-BOTTOM: 1px solid #D9F2FF}
+}
+.link3 {
+
+	font-size: 12px;
+	color: #FFCC00;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: "";
+}
+.table {
+	border: 1px solid #0099CC;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<servlet>
+		<servlet-name>IndexServlet</servlet-name>
+		<servlet-class>
+			org.bzc.jpetstore.servlets.IndexServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CategoryServlet</servlet-name>
+		<servlet-class>
+			org.bzc.jpetstore.servlets.CategoryServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ProductServlet</servlet-name>
+		<servlet-class>
+			org.bzc.jpetstore.servlets.ProductServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ItemServlet</servlet-name>
+		<servlet-class>
+			org.bzc.jpetstore.servlets.ItemServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>SignonServlet</servlet-name>
+		<servlet-class>
+			org.bzc.jpetstore.servlets.SignonServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OrdersServlet</servlet-name>
+		<servlet-class>
+			org.bzc.jpetstore.servlets.OrdersServlet
+		</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>IndexServlet</servlet-name>
+		<url-pattern>/index.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CategoryServlet</servlet-name>
+		<url-pattern>/category.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ProductServlet</servlet-name>
+		<url-pattern>/product.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ItemServlet</servlet-name>
+		<url-pattern>/item.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SignonServlet</servlet-name>
+		<url-pattern>/signon.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrdersServlet</servlet-name>
+		<url-pattern>/orders.do</url-pattern>
+	</servlet-mapping>
+</web-app>

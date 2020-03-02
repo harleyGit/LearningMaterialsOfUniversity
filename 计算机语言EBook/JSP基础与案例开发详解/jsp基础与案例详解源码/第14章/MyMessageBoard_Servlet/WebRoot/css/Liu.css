@@ -1,0 +1,63 @@
+.context {
+	font-size: 10pt;
+	border: thin solid #339966;
+}
+.table{
+border: 1px #fff solid;
+background:#fff;
+padding:7px;
+font-size: 10pt;
+border: thin solid #339966;
+}
+input,select {
+font-family: 'Century Gothic', Arial, Helvetica, sans-serif;
+background-color: #fff;
+border: 1px #333 solid;
+font-size: 12px;
+color: #666;
+height:18px;
+}
+.font{
+font-size:10pt;
+color:#FF0066
+}
+.title {
+	font-family: "宋体";
+	font-size: 12pt;
+	font-style: normal;
+	font-weight: bolder;
+	color: #000000;
+}
+.div {
+	width:320px;
+	border: thin dashed #CC9900;	
+	overflow: hidden;	
+	font-family: "宋体";
+	font-size: 9pt;
+	font-weight: bold;
+	color: #993366;
+	text-decoration: blink;
+	word-wrap: break-word;
+	background-position: center;	
+}
+.message {
+	white-space: normal;
+	display: inline;
+	border: thin none;
+	overflow: hidden;	
+	background-color: #E4E4E4;
+}
+.messageTitle {
+	font-size: 9pt;
+	font-weight: bold;
+	font-family: "宋体";
+}
+.fullmessage {
+	font-family: "宋体";
+	font-size: 9pt;
+	border: thin none;
+	float: none;
+	overflow: scroll;
+	visibility: visible;
+	background-color: #E4E4E4;
+}

@@ -1,0 +1,50 @@
+A:visited{TEXT-DECORATION: none}
+A:active{TEXT-DECORATION: none}
+A:hover{TEXT-DECORATION: underline overline}
+A:link{text-decoration: none;}
+.t{LINE-HEIGHT: 1.4}
+BODY{FONT-FAMILY: 宋体; FONT-SIZE: 9pt;
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #eeeeee;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow}
+TD{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+DIV{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+FORM{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+OPTION{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+P{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+TD{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+BR{FONT-FAMILY: 宋体; FONT-SIZE: 9pt}
+INPUT{BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 1px; PADDING-LEFT: 1px; BORDER-LEFT-WIDTH: 1px; FONT-SIZE: 9pt; BORDER-LEFT-COLOR: #cccccc; BORDER-BOTTOM-WIDTH: 1px; BORDER-BOTTOM-COLOR: #cccccc; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #cccccc; PADDING-TOP: 1px; HEIGHT: 18px; BORDER-RIGHT-WIDTH: 1px; BORDER-RIGHT-COLOR: #cccccc}
+textarea {border-width: 1; border-color: #000000; background-color: #efefef; font-family: 宋体; font-size: 9pt; font-style: bold;}
+select {border-width: 1; border-color: #000000; background-color: #efefef; font-family: 宋体; font-size: 9pt; font-style: bold;}
+
+.msg_head {
+	font-weight: bold;
+	color: #FFF;
+	padding: 4px;
+	width: 92%;
+	text-align: center;
+	background: url(../images/msg_header.gif);
+}
+.msg_content {
+	padding: 24px;
+	width: 92%;
+	text-align: center;
+	border: 1px solid #0252AB;
+}
+.bianhui{
+	font-size: 9pt;
+	color: #666666;
+	background-color: #F4F4F4;
+	border: 1px solid #b6b6b6;
+}
+.table{
+	border: thin solid #0099FF;
+}
+.t_member {
+	border: 1px solid #99CCFF;
+	margin: 1px;
+	padding: 1px;
+}

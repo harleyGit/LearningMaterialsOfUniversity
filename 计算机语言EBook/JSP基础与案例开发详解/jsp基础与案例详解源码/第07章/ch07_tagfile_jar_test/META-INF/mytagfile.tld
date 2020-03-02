@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	<!-- 此标签库的一个简短描述 -->
+	<description>一个自定义标签库</description>
+	<!-- 此标签库的版本,由标签开发者自行决定-->
+	<tlib-version>0.9</tlib-version>
+	<!-- 定义一个简短的名称,主要用来给一些工具使用-->
+	<short-name>t</short-name>
+	<!-- 定义此标签库的URI.用于唯一标识此标签库,便于页面的引用 -->
+	<uri>http://blog.csdn.net/qjyong/tagfiles</uri>
+	
+	<!-- 用标签文件实现的自定义标签声明 -->
+	<tag-file>
+		<!-- 自定义的标签的名称 -->
+		<name>footer</name>
+		<!-- 此标签文件在jar包的中路径,必须以/META-INF/tags开头 -->
+		<path>/META-INF/tags/footer.tag</path>
+	</tag-file>
+	<tag-file>
+		<name>footer2</name>
+		<path>/META-INF/tags/footer2.tag</path>
+	</tag-file>
+	<tag-file>
+		<name>dobody</name>
+		<path>/META-INF/tags/dobody.tag</path>
+	</tag-file>
+	<tag-file>
+		<name>fragment</name>
+		<path>/META-INF/tags/fragment.tag</path>
+	</tag-file>
+</taglib>
