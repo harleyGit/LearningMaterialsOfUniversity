@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1865463117A24A97003FDBB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1865463017A24A97003FDBB9 /* Foundation.framework */; };
+		1865463417A24A97003FDBB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865463317A24A97003FDBB9 /* main.m */; };
+		1865463817A24A97003FDBB9 /* _4_Animal.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1865463717A24A97003FDBB9 /* _4_Animal.1 */; };
+		1865464017A24AAD003FDBB9 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865463F17A24AAD003FDBB9 /* Animal.m */; };
+		1865464317A24B31003FDBB9 /* Rabbit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865464217A24B31003FDBB9 /* Rabbit.m */; };
+		1865464617A24BB4003FDBB9 /* Tiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865464517A24BB4003FDBB9 /* Tiger.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1865462B17A24A97003FDBB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				1865463817A24A97003FDBB9 /* _4_Animal.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1865462D17A24A97003FDBB9 /* 04.Animal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 04.Animal; sourceTree = BUILT_PRODUCTS_DIR; };
+		1865463017A24A97003FDBB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1865463317A24A97003FDBB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1865463617A24A97003FDBB9 /* 04.Animal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "04.Animal-Prefix.pch"; sourceTree = "<group>"; };
+		1865463717A24A97003FDBB9 /* _4_Animal.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = _4_Animal.1; sourceTree = "<group>"; };
+		1865463E17A24AAD003FDBB9 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		1865463F17A24AAD003FDBB9 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		1865464117A24B31003FDBB9 /* Rabbit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rabbit.h; sourceTree = "<group>"; };
+		1865464217A24B31003FDBB9 /* Rabbit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rabbit.m; sourceTree = "<group>"; };
+		1865464417A24BB4003FDBB9 /* Tiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tiger.h; sourceTree = "<group>"; };
+		1865464517A24BB4003FDBB9 /* Tiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tiger.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1865462A17A24A97003FDBB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1865463117A24A97003FDBB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1865462417A24A97003FDBB9 = {
+			isa = PBXGroup;
+			children = (
+				1865463217A24A97003FDBB9 /* 04.Animal */,
+				1865462F17A24A97003FDBB9 /* Frameworks */,
+				1865462E17A24A97003FDBB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1865462E17A24A97003FDBB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1865462D17A24A97003FDBB9 /* 04.Animal */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1865462F17A24A97003FDBB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1865463017A24A97003FDBB9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1865463217A24A97003FDBB9 /* 04.Animal */ = {
+			isa = PBXGroup;
+			children = (
+				1865463317A24A97003FDBB9 /* main.m */,
+				1865463E17A24AAD003FDBB9 /* Animal.h */,
+				1865463F17A24AAD003FDBB9 /* Animal.m */,
+				1865464117A24B31003FDBB9 /* Rabbit.h */,
+				1865464217A24B31003FDBB9 /* Rabbit.m */,
+				1865464417A24BB4003FDBB9 /* Tiger.h */,
+				1865464517A24BB4003FDBB9 /* Tiger.m */,
+				1865463717A24A97003FDBB9 /* _4_Animal.1 */,
+				1865463517A24A97003FDBB9 /* Supporting Files */,
+			);
+			path = 04.Animal;
+			sourceTree = "<group>";
+		};
+		1865463517A24A97003FDBB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1865463617A24A97003FDBB9 /* 04.Animal-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1865462C17A24A97003FDBB9 /* 04.Animal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1865463B17A24A97003FDBB9 /* Build configuration list for PBXNativeTarget "04.Animal" */;
+			buildPhases = (
+				1865462917A24A97003FDBB9 /* Sources */,
+				1865462A17A24A97003FDBB9 /* Frameworks */,
+				1865462B17A24A97003FDBB9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 04.Animal;
+			productName = 04.Animal;
+			productReference = 1865462D17A24A97003FDBB9 /* 04.Animal */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1865462517A24A97003FDBB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "www.iphonetrain.com 无限互联3G学院";
+			};
+			buildConfigurationList = 1865462817A24A97003FDBB9 /* Build configuration list for PBXProject "04.Animal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1865462417A24A97003FDBB9;
+			productRefGroup = 1865462E17A24A97003FDBB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1865462C17A24A97003FDBB9 /* 04.Animal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1865462917A24A97003FDBB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1865463417A24A97003FDBB9 /* main.m in Sources */,
+				1865464017A24AAD003FDBB9 /* Animal.m in Sources */,
+				1865464317A24B31003FDBB9 /* Rabbit.m in Sources */,
+				1865464617A24BB4003FDBB9 /* Tiger.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1865463917A24A97003FDBB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1865463A17A24A97003FDBB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1865463C17A24A97003FDBB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "04.Animal/04.Animal-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1865463D17A24A97003FDBB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "04.Animal/04.Animal-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1865462817A24A97003FDBB9 /* Build configuration list for PBXProject "04.Animal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865463917A24A97003FDBB9 /* Debug */,
+				1865463A17A24A97003FDBB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1865463B17A24A97003FDBB9 /* Build configuration list for PBXNativeTarget "04.Animal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865463C17A24A97003FDBB9 /* Debug */,
+				1865463D17A24A97003FDBB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1865462517A24A97003FDBB9 /* Project object */;
+}

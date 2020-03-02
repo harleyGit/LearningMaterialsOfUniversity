@@ -1,0 +1,271 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1865467E17A26A41003FDBB9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1865467D17A26A41003FDBB9 /* Foundation.framework */; };
+		1865468117A26A41003FDBB9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865468017A26A41003FDBB9 /* main.m */; };
+		1865468517A26A41003FDBB9 /* _6_Instrument.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1865468417A26A41003FDBB9 /* _6_Instrument.1 */; };
+		1865468D17A26A5D003FDBB9 /* Instrument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865468C17A26A5D003FDBB9 /* Instrument.m */; };
+		1865469017A26ACE003FDBB9 /* Piano.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865468F17A26ACE003FDBB9 /* Piano.m */; };
+		1865469317A26B0F003FDBB9 /* Violin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865469217A26B0F003FDBB9 /* Violin.m */; };
+		1865469617A26B42003FDBB9 /* Actor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1865469517A26B42003FDBB9 /* Actor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1865467817A26A41003FDBB9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				1865468517A26A41003FDBB9 /* _6_Instrument.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1865467A17A26A41003FDBB9 /* 06.Instrument */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 06.Instrument; sourceTree = BUILT_PRODUCTS_DIR; };
+		1865467D17A26A41003FDBB9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1865468017A26A41003FDBB9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1865468317A26A41003FDBB9 /* 06.Instrument-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "06.Instrument-Prefix.pch"; sourceTree = "<group>"; };
+		1865468417A26A41003FDBB9 /* _6_Instrument.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = _6_Instrument.1; sourceTree = "<group>"; };
+		1865468B17A26A5D003FDBB9 /* Instrument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instrument.h; sourceTree = "<group>"; };
+		1865468C17A26A5D003FDBB9 /* Instrument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instrument.m; sourceTree = "<group>"; };
+		1865468E17A26ACE003FDBB9 /* Piano.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piano.h; sourceTree = "<group>"; };
+		1865468F17A26ACE003FDBB9 /* Piano.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piano.m; sourceTree = "<group>"; };
+		1865469117A26B0F003FDBB9 /* Violin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Violin.h; sourceTree = "<group>"; };
+		1865469217A26B0F003FDBB9 /* Violin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Violin.m; sourceTree = "<group>"; };
+		1865469417A26B42003FDBB9 /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actor.h; sourceTree = "<group>"; };
+		1865469517A26B42003FDBB9 /* Actor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actor.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1865467717A26A41003FDBB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1865467E17A26A41003FDBB9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1865467117A26A41003FDBB9 = {
+			isa = PBXGroup;
+			children = (
+				1865467F17A26A41003FDBB9 /* 06.Instrument */,
+				1865467C17A26A41003FDBB9 /* Frameworks */,
+				1865467B17A26A41003FDBB9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1865467B17A26A41003FDBB9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1865467A17A26A41003FDBB9 /* 06.Instrument */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1865467C17A26A41003FDBB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1865467D17A26A41003FDBB9 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1865467F17A26A41003FDBB9 /* 06.Instrument */ = {
+			isa = PBXGroup;
+			children = (
+				1865468017A26A41003FDBB9 /* main.m */,
+				1865468B17A26A5D003FDBB9 /* Instrument.h */,
+				1865468C17A26A5D003FDBB9 /* Instrument.m */,
+				1865468E17A26ACE003FDBB9 /* Piano.h */,
+				1865468F17A26ACE003FDBB9 /* Piano.m */,
+				1865469117A26B0F003FDBB9 /* Violin.h */,
+				1865469217A26B0F003FDBB9 /* Violin.m */,
+				1865469417A26B42003FDBB9 /* Actor.h */,
+				1865469517A26B42003FDBB9 /* Actor.m */,
+				1865468417A26A41003FDBB9 /* _6_Instrument.1 */,
+				1865468217A26A41003FDBB9 /* Supporting Files */,
+			);
+			path = 06.Instrument;
+			sourceTree = "<group>";
+		};
+		1865468217A26A41003FDBB9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1865468317A26A41003FDBB9 /* 06.Instrument-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1865467917A26A41003FDBB9 /* 06.Instrument */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1865468817A26A41003FDBB9 /* Build configuration list for PBXNativeTarget "06.Instrument" */;
+			buildPhases = (
+				1865467617A26A41003FDBB9 /* Sources */,
+				1865467717A26A41003FDBB9 /* Frameworks */,
+				1865467817A26A41003FDBB9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 06.Instrument;
+			productName = 06.Instrument;
+			productReference = 1865467A17A26A41003FDBB9 /* 06.Instrument */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1865467217A26A41003FDBB9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "www.iphonetrain.com 无限互联3G学院";
+			};
+			buildConfigurationList = 1865467517A26A41003FDBB9 /* Build configuration list for PBXProject "06.Instrument" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1865467117A26A41003FDBB9;
+			productRefGroup = 1865467B17A26A41003FDBB9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1865467917A26A41003FDBB9 /* 06.Instrument */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1865467617A26A41003FDBB9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1865468117A26A41003FDBB9 /* main.m in Sources */,
+				1865468D17A26A5D003FDBB9 /* Instrument.m in Sources */,
+				1865469017A26ACE003FDBB9 /* Piano.m in Sources */,
+				1865469317A26B0F003FDBB9 /* Violin.m in Sources */,
+				1865469617A26B42003FDBB9 /* Actor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1865468617A26A41003FDBB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1865468717A26A41003FDBB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1865468917A26A41003FDBB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "06.Instrument/06.Instrument-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1865468A17A26A41003FDBB9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "06.Instrument/06.Instrument-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1865467517A26A41003FDBB9 /* Build configuration list for PBXProject "06.Instrument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865468617A26A41003FDBB9 /* Debug */,
+				1865468717A26A41003FDBB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1865468817A26A41003FDBB9 /* Build configuration list for PBXNativeTarget "06.Instrument" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1865468917A26A41003FDBB9 /* Debug */,
+				1865468A17A26A41003FDBB9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1865467217A26A41003FDBB9 /* Project object */;
+}

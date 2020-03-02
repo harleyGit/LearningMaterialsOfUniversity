@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '06.Instrument' target in the '06.Instrument' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

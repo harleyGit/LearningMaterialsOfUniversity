@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		183CF0C9179FBAAA001BD45A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183CF0C8179FBAAA001BD45A /* Foundation.framework */; };
+		183CF0CC179FBAAA001BD45A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CF0CB179FBAAA001BD45A /* main.m */; };
+		183CF0D0179FBAAA001BD45A /* _8_Rectangle.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 183CF0CF179FBAAA001BD45A /* _8_Rectangle.1 */; };
+		183CF0D8179FBAC3001BD45A /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 183CF0D7179FBAC3001BD45A /* Rectangle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		183CF0C3179FBAAA001BD45A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				183CF0D0179FBAAA001BD45A /* _8_Rectangle.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		183CF0C5179FBAAA001BD45A /* 08.Rectangle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 08.Rectangle; sourceTree = BUILT_PRODUCTS_DIR; };
+		183CF0C8179FBAAA001BD45A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		183CF0CB179FBAAA001BD45A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		183CF0CE179FBAAA001BD45A /* 08.Rectangle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "08.Rectangle-Prefix.pch"; sourceTree = "<group>"; };
+		183CF0CF179FBAAA001BD45A /* _8_Rectangle.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = _8_Rectangle.1; sourceTree = "<group>"; };
+		183CF0D6179FBAC3001BD45A /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		183CF0D7179FBAC3001BD45A /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		183CF0C2179FBAAA001BD45A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CF0C9179FBAAA001BD45A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		183CF0BC179FBAAA001BD45A = {
+			isa = PBXGroup;
+			children = (
+				183CF0CA179FBAAA001BD45A /* 08.Rectangle */,
+				183CF0C7179FBAAA001BD45A /* Frameworks */,
+				183CF0C6179FBAAA001BD45A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		183CF0C6179FBAAA001BD45A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				183CF0C5179FBAAA001BD45A /* 08.Rectangle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		183CF0C7179FBAAA001BD45A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				183CF0C8179FBAAA001BD45A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		183CF0CA179FBAAA001BD45A /* 08.Rectangle */ = {
+			isa = PBXGroup;
+			children = (
+				183CF0CB179FBAAA001BD45A /* main.m */,
+				183CF0D6179FBAC3001BD45A /* Rectangle.h */,
+				183CF0D7179FBAC3001BD45A /* Rectangle.m */,
+				183CF0CF179FBAAA001BD45A /* _8_Rectangle.1 */,
+				183CF0CD179FBAAA001BD45A /* Supporting Files */,
+			);
+			path = 08.Rectangle;
+			sourceTree = "<group>";
+		};
+		183CF0CD179FBAAA001BD45A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				183CF0CE179FBAAA001BD45A /* 08.Rectangle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		183CF0C4179FBAAA001BD45A /* 08.Rectangle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 183CF0D3179FBAAA001BD45A /* Build configuration list for PBXNativeTarget "08.Rectangle" */;
+			buildPhases = (
+				183CF0C1179FBAAA001BD45A /* Sources */,
+				183CF0C2179FBAAA001BD45A /* Frameworks */,
+				183CF0C3179FBAAA001BD45A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = 08.Rectangle;
+			productName = 08.Rectangle;
+			productReference = 183CF0C5179FBAAA001BD45A /* 08.Rectangle */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		183CF0BD179FBAAA001BD45A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "www.iphonetrain.com 无限互联3G学院";
+			};
+			buildConfigurationList = 183CF0C0179FBAAA001BD45A /* Build configuration list for PBXProject "08.Rectangle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 183CF0BC179FBAAA001BD45A;
+			productRefGroup = 183CF0C6179FBAAA001BD45A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				183CF0C4179FBAAA001BD45A /* 08.Rectangle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		183CF0C1179FBAAA001BD45A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				183CF0CC179FBAAA001BD45A /* main.m in Sources */,
+				183CF0D8179FBAC3001BD45A /* Rectangle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		183CF0D1179FBAAA001BD45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		183CF0D2179FBAAA001BD45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		183CF0D4179FBAAA001BD45A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "08.Rectangle/08.Rectangle-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		183CF0D5179FBAAA001BD45A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "08.Rectangle/08.Rectangle-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		183CF0C0179FBAAA001BD45A /* Build configuration list for PBXProject "08.Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CF0D1179FBAAA001BD45A /* Debug */,
+				183CF0D2179FBAAA001BD45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		183CF0D3179FBAAA001BD45A /* Build configuration list for PBXNativeTarget "08.Rectangle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				183CF0D4179FBAAA001BD45A /* Debug */,
+				183CF0D5179FBAAA001BD45A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 183CF0BD179FBAAA001BD45A /* Project object */;
+}

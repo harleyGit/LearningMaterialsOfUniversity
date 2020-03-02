@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the '04.Animal' target in the '04.Animal' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

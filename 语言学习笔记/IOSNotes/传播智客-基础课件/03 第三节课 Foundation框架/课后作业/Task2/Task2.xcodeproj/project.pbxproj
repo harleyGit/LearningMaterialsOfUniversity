@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182573CD17A76BA000F4E1BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE0F1E17A7478B0097FB48 /* Foundation.framework */; };
+		182573D017A76BA100F4E1BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 182573CF17A76BA100F4E1BE /* main.m */; };
+		182573D417A76BA700F4E1BE /* _4_____1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 182573D317A76BA700F4E1BE /* _4_____1.1 */; };
+		18BE0F1F17A7478B0097FB48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18BE0F1E17A7478B0097FB48 /* Foundation.framework */; };
+		18BE0F2217A7478B0097FB48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE0F2117A7478B0097FB48 /* main.m */; };
+		18BE0F2617A7478B0097FB48 /* Task2.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18BE0F2517A7478B0097FB48 /* Task2.1 */; };
+		18BE0F2E17A747E80097FB48 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BE0F2D17A747E80097FB48 /* Student.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		182573CA17A76BA000F4E1BE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				182573D417A76BA700F4E1BE /* _4_____1.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		18BE0F1917A7478B0097FB48 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				18BE0F2617A7478B0097FB48 /* Task2.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		182573CC17A76BA000F4E1BE /* 04.课堂练习1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04.课堂练习1"; sourceTree = BUILT_PRODUCTS_DIR; };
+		182573CF17A76BA100F4E1BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		182573D217A76BA700F4E1BE /* 04.课堂练习1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "04.课堂练习1-Prefix.pch"; sourceTree = "<group>"; };
+		182573D317A76BA700F4E1BE /* _4_____1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "_4_____1.1"; sourceTree = "<group>"; };
+		18BE0F1B17A7478B0097FB48 /* Task2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Task2; sourceTree = BUILT_PRODUCTS_DIR; };
+		18BE0F1E17A7478B0097FB48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18BE0F2117A7478B0097FB48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18BE0F2417A7478B0097FB48 /* Task2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Task2-Prefix.pch"; sourceTree = "<group>"; };
+		18BE0F2517A7478B0097FB48 /* Task2.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Task2.1; sourceTree = "<group>"; };
+		18BE0F2C17A747E80097FB48 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		18BE0F2D17A747E80097FB48 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		182573C917A76BA000F4E1BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182573CD17A76BA000F4E1BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE0F1817A7478B0097FB48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BE0F1F17A7478B0097FB48 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		182573CE17A76BA000F4E1BE /* 04.课堂练习1 */ = {
+			isa = PBXGroup;
+			children = (
+				182573CF17A76BA100F4E1BE /* main.m */,
+				182573D317A76BA700F4E1BE /* _4_____1.1 */,
+				182573D117A76BA700F4E1BE /* Supporting Files */,
+			);
+			path = "04.课堂练习1";
+			sourceTree = "<group>";
+		};
+		182573D117A76BA700F4E1BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				182573D217A76BA700F4E1BE /* 04.课堂练习1-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18BE0F1217A7478B0097FB48 = {
+			isa = PBXGroup;
+			children = (
+				18BE0F2017A7478B0097FB48 /* Task2 */,
+				182573CE17A76BA000F4E1BE /* 04.课堂练习1 */,
+				18BE0F1D17A7478B0097FB48 /* Frameworks */,
+				18BE0F1C17A7478B0097FB48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18BE0F1C17A7478B0097FB48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18BE0F1B17A7478B0097FB48 /* Task2 */,
+				182573CC17A76BA000F4E1BE /* 04.课堂练习1 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18BE0F1D17A7478B0097FB48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18BE0F1E17A7478B0097FB48 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18BE0F2017A7478B0097FB48 /* Task2 */ = {
+			isa = PBXGroup;
+			children = (
+				18BE0F2117A7478B0097FB48 /* main.m */,
+				18BE0F2C17A747E80097FB48 /* Student.h */,
+				18BE0F2D17A747E80097FB48 /* Student.m */,
+				18BE0F2517A7478B0097FB48 /* Task2.1 */,
+				18BE0F2317A7478B0097FB48 /* Supporting Files */,
+			);
+			path = Task2;
+			sourceTree = "<group>";
+		};
+		18BE0F2317A7478B0097FB48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18BE0F2417A7478B0097FB48 /* Task2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		182573CB17A76BA000F4E1BE /* 04.课堂练习1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 182573D717A76BA700F4E1BE /* Build configuration list for PBXNativeTarget "04.课堂练习1" */;
+			buildPhases = (
+				182573C817A76BA000F4E1BE /* Sources */,
+				182573C917A76BA000F4E1BE /* Frameworks */,
+				182573CA17A76BA000F4E1BE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04.课堂练习1";
+			productName = "04.课堂练习1";
+			productReference = 182573CC17A76BA000F4E1BE /* 04.课堂练习1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		18BE0F1A17A7478B0097FB48 /* Task2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18BE0F2917A7478B0097FB48 /* Build configuration list for PBXNativeTarget "Task2" */;
+			buildPhases = (
+				18BE0F1717A7478B0097FB48 /* Sources */,
+				18BE0F1817A7478B0097FB48 /* Frameworks */,
+				18BE0F1917A7478B0097FB48 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Task2;
+			productName = Task2;
+			productReference = 18BE0F1B17A7478B0097FB48 /* Task2 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18BE0F1317A7478B0097FB48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "www.iphonetrain.com 无限互联3G学院";
+			};
+			buildConfigurationList = 18BE0F1617A7478B0097FB48 /* Build configuration list for PBXProject "Task2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18BE0F1217A7478B0097FB48;
+			productRefGroup = 18BE0F1C17A7478B0097FB48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18BE0F1A17A7478B0097FB48 /* Task2 */,
+				182573CB17A76BA000F4E1BE /* 04.课堂练习1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		182573C817A76BA000F4E1BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182573D017A76BA100F4E1BE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18BE0F1717A7478B0097FB48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18BE0F2217A7478B0097FB48 /* main.m in Sources */,
+				18BE0F2E17A747E80097FB48 /* Student.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		182573D517A76BA700F4E1BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "04.课堂练习1/04.课堂练习1-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		182573D617A76BA700F4E1BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "04.课堂练习1/04.课堂练习1-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		18BE0F2717A7478B0097FB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18BE0F2817A7478B0097FB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18BE0F2A17A7478B0097FB48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Task2/Task2-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		18BE0F2B17A7478B0097FB48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Task2/Task2-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		182573D717A76BA700F4E1BE /* Build configuration list for PBXNativeTarget "04.课堂练习1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				182573D517A76BA700F4E1BE /* Debug */,
+				182573D617A76BA700F4E1BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18BE0F1617A7478B0097FB48 /* Build configuration list for PBXProject "Task2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BE0F2717A7478B0097FB48 /* Debug */,
+				18BE0F2817A7478B0097FB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18BE0F2917A7478B0097FB48 /* Build configuration list for PBXNativeTarget "Task2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18BE0F2A17A7478B0097FB48 /* Debug */,
+				18BE0F2B17A7478B0097FB48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18BE0F1317A7478B0097FB48 /* Project object */;
+}
